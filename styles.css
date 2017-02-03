@@ -1,0 +1,29 @@
+
+/* KOLORY
+#fad290
+#db8e58
+
+FAD290
+FFCF80
+FFC566
+
+246DB2
+66B4FF*/
+
+
+.duzyTytul {
+    background-image: url(./Grafiki/ZajawkaFoto.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 500px;
+
+}
+
+.duzyTytul h1 {
+    margin: auto;
+    font-size: 8em;
+    color: #66B4FF;
+}
+
+
