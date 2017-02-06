@@ -28,12 +28,11 @@ kolor ciemnosco:
     background-color: #423137;
 
     /*background-attachment: fixed;*/
+    /*position: relative;*/
 
 }
 .duzyTytul {
     height: 700px;
-
-
 }
 
 .duzyTytul h1 {
@@ -59,4 +58,32 @@ kolor ciemnosco:
     /*background-color: #db8e58;*/
     text-shadow: 4px 4px 2px  saddlebrown;
 
+}
+
+
+.obramowanie-przycisku {
+    display: flex;
+    /*align-self: center;*/
+    justify-content:center;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+
+    margin-top: 4em;
+}
+
+.przycisk-zapisz-sie {
+    font-size: 1.5em;
+    height: 55px;
+    padding: 0;
+    box-sizing: border-box;
+    width: 200px;
+    border: none;
+    background: #814945;
+
+    box-shadow: 0 20px 30px transparentize($primary-color, 0.7);
+}
+
+.przycisk-zapisz-sie a {
+    color: antiquewhite;
+    text-decoration: none;
 }
