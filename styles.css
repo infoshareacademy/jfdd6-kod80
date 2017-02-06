@@ -8,22 +8,55 @@ FFCF80
 FFC566
 
 246DB2
-66B4FF*/
+66B4FF
 
+kolory napisow
+antiquewhite
 
-.duzyTytul {
+kolor ciemnosco:
+423137
+
+*/
+
+.zajawka {
+    display: flex;
+    justify-content:center;
     background-image: url(./Grafiki/ZajawkaFoto.jpg);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
-    background-attachment: fixed;
-    height: 500px;
+    background-repeat:no-repeat;
+    background-color: #423137;
+
+    /*background-attachment: fixed;*/
+
+}
+.duzyTytul {
+    height: 700px;
+
 
 }
 
 .duzyTytul h1 {
-    margin: auto;
     font-size: 8em;
-    color: #66B4FF;
+    padding: 0;
+    margin: 5% 0 0 0;
+    color: antiquewhite;
 }
 
+.duzyTytul h2 {
+    margin: 0;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 2em;
+    text-shadow: 4px 4px 2px  saddlebrown;
+    /*margin-top: 5%;*/
+}
 
+.duzyTytul p {
+    text-align: center;
+    color: antiquewhite;
+    font-size: 2em;
+    /*background-color: #db8e58;*/
+    text-shadow: 4px 4px 2px  saddlebrown;
+
+}
