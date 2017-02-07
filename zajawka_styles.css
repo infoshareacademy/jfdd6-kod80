@@ -21,11 +21,9 @@ kolor ciemnosco:
   justify-content: center;
   background-image: url(./Grafiki/ZajawkaFoto.jpg);
   background-size: contain;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
-  background-color: #423137;
-  /*background-attachment: fixed;*/
-  /*position: relative;*/ }
+  background-color: #423137; }
 
 .duzyTytul {
   height: 700px; }
@@ -44,25 +42,23 @@ kolor ciemnosco:
     text-align: center;
     color: antiquewhite;
     font-size: 2vw;
-    /*background-color: #db8e58;*/
     text-shadow: 4px 4px 2px saddlebrown; }
 
 .obramowanie-przycisku {
   display: flex;
-  /*align-self: center;*/
   justify-content: center;
-  /*position: absolute;*/
-  /*bottom: 0;*/
   margin-top: 2.5em; }
 
 .przycisk-zapisz-sie {
   font-size: 1.8vw;
-  height: 55px;
+  height: 6vh;
   padding: 0;
   box-sizing: border-box;
-  width: 200px;
+  width: 14vw;
   border: none;
   background-color: rgba(66, 49, 55, 0.8); }
+  .przycisk-zapisz-sie:hover {
+    border: double; }
   .przycisk-zapisz-sie a {
     color: antiquewhite;
     text-decoration: none; }

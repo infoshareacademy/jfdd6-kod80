@@ -30,12 +30,9 @@ $big_font_size: 10vw;
   justify-content:center;
   background-image: url(./Grafiki/ZajawkaFoto.jpg);
   background-size: contain;
-  background-position: center;
+  background-position: center top;
   background-repeat:no-repeat;
   background-color: $color_ciemnosci;
-
-  /*background-attachment: fixed;*/
-  /*position: relative;*/
 
 }
 
@@ -43,12 +40,10 @@ $big_font_size: 10vw;
   height: 700px;
 
      h1 {
-      //font-size: 8em;
       font-size: $big_font_size;
       padding: 0;
       margin: 5% 0 0 0;
       color: $color_duzych_napisow;
-
     }
 
      h2 {
@@ -57,15 +52,12 @@ $big_font_size: 10vw;
       color: $color_duzych_napisow;
       font-size: $big_font_size*0.3;
       text-shadow: 4px 4px 2px  $color_cienia_duzych_napisow;
-
-
     }
 
      p {
       text-align: center;
       color: $color_duzych_napisow;
       font-size: $big_font_size*0.2;
-      /*background-color: #db8e58;*/
       text-shadow: 4px 4px 2px  $color_cienia_duzych_napisow;
 
 
@@ -75,29 +67,32 @@ $big_font_size: 10vw;
 
 .obramowanie-przycisku {
   display: flex;
-  /*align-self: center;*/
   justify-content:center;
-  /*position: absolute;*/
-  /*bottom: 0;*/
 
   margin-top: 2.5em;
+
+
 }
 
 .przycisk-zapisz-sie {
   font-size: $big_font_size*0.18;
-  height: 55px;
+  height: 6vh;
   padding: 0;
   box-sizing: border-box;
-  width: 200px;
+  width: 14vw;
   border: none;
-  //background: none;
+
   background-color: transparentize($color_ciemnosci, 0.2) ;
 
-    a {
+
+  &:hover {
+    border: double;
+  }
+
+  a {
     color: $color_duzych_napisow;
     text-decoration: none;
   }
 
-  //box-shadow: 0 20px 30px transparentize($primary-color, 0.7);
 }
 
