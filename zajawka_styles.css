@@ -29,27 +29,23 @@ kolor ciemnosco:
 
 .duzyTytul {
   height: 700px; }
-
-.duzyTytul h1 {
-  font-size: 8em;
-  padding: 0;
-  margin: 5% 0 0 0;
-  color: antiquewhite; }
-
-.duzyTytul h2 {
-  margin: 0;
-  text-align: center;
-  color: antiquewhite;
-  font-size: 2em;
-  text-shadow: 4px 4px 2px  saddlebrown;
-  /*margin-top: 5%;*/ }
-
-.duzyTytul p {
-  text-align: center;
-  color: antiquewhite;
-  font-size: 2em;
-  /*background-color: #db8e58;*/
-  text-shadow: 4px 4px 2px  saddlebrown; }
+  .duzyTytul h1 {
+    font-size: 8em;
+    padding: 0;
+    margin: 5% 0 0 0;
+    color: antiquewhite; }
+  .duzyTytul h2 {
+    margin: 0;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 2em;
+    text-shadow: 4px 4px 2px saddlebrown; }
+  .duzyTytul p {
+    text-align: center;
+    color: antiquewhite;
+    font-size: 2em;
+    /*background-color: #db8e58;*/
+    text-shadow: 4px 4px 2px saddlebrown; }
 
 .obramowanie-przycisku {
   display: flex;
@@ -67,9 +63,8 @@ kolor ciemnosco:
   width: 200px;
   border: none;
   background: #814945; }
-
-.przycisk-zapisz-sie a {
-  color: antiquewhite;
-  text-decoration: none; }
+  .przycisk-zapisz-sie a {
+    color: antiquewhite;
+    text-decoration: none; }
 
 /*# sourceMappingURL=zajawka_styles.css.map */

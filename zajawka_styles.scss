@@ -18,6 +18,11 @@ kolor ciemnosco:
 
 */
 
+$color_ciemnosci: #423137;
+
+$color_duzych_napisow: antiquewhite;
+$color_cienia_duzych_napisow: saddlebrown;
+
 .zajawka {
   display: flex;
   justify-content:center;
@@ -25,39 +30,40 @@ kolor ciemnosco:
   background-size: contain;
   background-position: center;
   background-repeat:no-repeat;
-  background-color: #423137;
+  background-color: $color_ciemnosci;
 
   /*background-attachment: fixed;*/
   /*position: relative;*/
 
 }
+
 .duzyTytul {
   height: 700px;
-}
 
-.duzyTytul h1 {
-  font-size: 8em;
-  padding: 0;
-  margin: 5% 0 0 0;
-  color: antiquewhite;
-}
+     h1 {
+      font-size: 8em;
+      padding: 0;
+      margin: 5% 0 0 0;
+      color: $color_duzych_napisow;
+    }
 
-.duzyTytul h2 {
-  margin: 0;
-  text-align: center;
-  color: antiquewhite;
-  font-size: 2em;
-  text-shadow: 4px 4px 2px  saddlebrown;
-  /*margin-top: 5%;*/
-}
+     h2 {
+      margin: 0;
+      text-align: center;
+      color: $color_duzych_napisow;
+      font-size: 2em;
+      text-shadow: 4px 4px 2px  $color_cienia_duzych_napisow;
 
-.duzyTytul p {
-  text-align: center;
-  color: antiquewhite;
-  font-size: 2em;
-  /*background-color: #db8e58;*/
-  text-shadow: 4px 4px 2px  saddlebrown;
+    }
 
+     p {
+      text-align: center;
+      color: $color_duzych_napisow;
+      font-size: 2em;
+      /*background-color: #db8e58;*/
+      text-shadow: 4px 4px 2px  $color_cienia_duzych_napisow;
+
+    }
 }
 
 
@@ -80,10 +86,11 @@ kolor ciemnosco:
   border: none;
   background: #814945;
 
+    a {
+    color: $color_duzych_napisow;
+    text-decoration: none;
+  }
+
   //box-shadow: 0 20px 30px transparentize($primary-color, 0.7);
 }
 
-.przycisk-zapisz-sie a {
-  color: antiquewhite;
-  text-decoration: none;
-}
