@@ -23,6 +23,8 @@ $color_ciemnosci: #423137;
 $color_duzych_napisow: antiquewhite;
 $color_cienia_duzych_napisow: saddlebrown;
 
+$big_font_size: 10vw;
+
 .zajawka {
   display: flex;
   justify-content:center;
@@ -41,7 +43,8 @@ $color_cienia_duzych_napisow: saddlebrown;
   height: 700px;
 
      h1 {
-      font-size: 8em;
+      //font-size: 8em;
+      font-size: $big_font_size;
       padding: 0;
       margin: 5% 0 0 0;
       color: $color_duzych_napisow;
@@ -52,19 +55,19 @@ $color_cienia_duzych_napisow: saddlebrown;
       margin: 0;
       text-align: center;
       color: $color_duzych_napisow;
-      font-size: 2em;
+      font-size: $big_font_size*0.3;
       text-shadow: 4px 4px 2px  $color_cienia_duzych_napisow;
-       word-wrap: break-word;
+
 
     }
 
      p {
       text-align: center;
       color: $color_duzych_napisow;
-      font-size: 2em;
+      font-size: $big_font_size*0.2;
       /*background-color: #db8e58;*/
       text-shadow: 4px 4px 2px  $color_cienia_duzych_napisow;
-       word-wrap: break-word;
+
 
     }
 }
