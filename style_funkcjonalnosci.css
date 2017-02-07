@@ -4,24 +4,25 @@
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
-  background-color: #e2f8ff;
+  background-color: antiquewhite;
   padding: 30px 15px; }
   .funkcjonalnosci .styl_ramki_funkcjonalnosci {
     text-align: center;
     border-radius: 5%;
-    border: solid 1px #2721ff;
-    background-color: #d8d8d8;
-    width: 200px;
+    box-shadow: 2px 2px 6px #29140a;
+    background-color: #814945;
+    width: 220px;
     margin: 0 15px;
-    color: #5b86ff; }
+    color: antiquewhite;
+    transition: background-color 2s; }
     .funkcjonalnosci .styl_ramki_funkcjonalnosci:hover {
-      background-color: #6dfa35; }
+      background-color: rgba(129, 54, 10, 0.91); }
     .funkcjonalnosci .styl_ramki_funkcjonalnosci h1 {
       font-size: 20px; }
     .funkcjonalnosci .styl_ramki_funkcjonalnosci .ikona_funkcjonalnosci {
       margin: 20px auto;
       display: block;
-      background-color: deeppink;
+      background-color: antiquewhite;
       width: 40px;
       height: 40px;
       border-radius: 100%;
@@ -29,11 +30,10 @@
       .funkcjonalnosci .styl_ramki_funkcjonalnosci .ikona_funkcjonalnosci img {
         vertical-align: middle; }
     .funkcjonalnosci .styl_ramki_funkcjonalnosci p {
-      margin: 5px;
-      padding: 5px;
-      border: solid 3px #6dfa35; }
+      margin: 10px;
+      padding: 10px; }
     .funkcjonalnosci .styl_ramki_funkcjonalnosci .opis_funkcjonalnosci {
-      color: black; }
+      color: antiquewhite; }
       .funkcjonalnosci .styl_ramki_funkcjonalnosci .opis_funkcjonalnosci .lista_funkcjonalnosci {
         list-style: circle;
         text-align: left; }
