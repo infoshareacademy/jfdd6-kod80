@@ -56,11 +56,11 @@ kolor ciemnosco:
   box-sizing: border-box;
   width: 14vw;
   border: none;
+  color: antiquewhite;
   background-color: rgba(66, 49, 55, 0.8); }
   .przycisk-zapisz-sie:hover {
     border: double; }
   .przycisk-zapisz-sie a {
-    color: antiquewhite;
     text-decoration: none; }
 
 /*# sourceMappingURL=zajawka_styles.css.map */

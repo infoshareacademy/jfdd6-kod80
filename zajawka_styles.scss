@@ -81,16 +81,14 @@ $big_font_size: 10vw;
   box-sizing: border-box;
   width: 14vw;
   border: none;
-
+  color: $color_duzych_napisow;
   background-color: transparentize($color_ciemnosci, 0.2) ;
-
 
   &:hover {
     border: double;
   }
 
   a {
-    color: $color_duzych_napisow;
     text-decoration: none;
   }
 
