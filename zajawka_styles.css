@@ -39,13 +39,15 @@ kolor ciemnosco:
     text-align: center;
     color: antiquewhite;
     font-size: 2em;
-    text-shadow: 4px 4px 2px saddlebrown; }
+    text-shadow: 4px 4px 2px saddlebrown;
+    word-wrap: break-word; }
   .duzyTytul p {
     text-align: center;
     color: antiquewhite;
     font-size: 2em;
     /*background-color: #db8e58;*/
-    text-shadow: 4px 4px 2px saddlebrown; }
+    text-shadow: 4px 4px 2px saddlebrown;
+    word-wrap: break-word; }
 
 .obramowanie-przycisku {
   display: flex;
@@ -53,7 +55,7 @@ kolor ciemnosco:
   justify-content: center;
   /*position: absolute;*/
   /*bottom: 0;*/
-  margin-top: 4em; }
+  margin-top: 2.5em; }
 
 .przycisk-zapisz-sie {
   font-size: 1.5em;
@@ -62,7 +64,7 @@ kolor ciemnosco:
   box-sizing: border-box;
   width: 200px;
   border: none;
-  background: #814945; }
+  background-color: rgba(66, 49, 55, 0.8); }
   .przycisk-zapisz-sie a {
     color: antiquewhite;
     text-decoration: none; }
