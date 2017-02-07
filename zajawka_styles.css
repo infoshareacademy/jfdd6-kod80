@@ -37,12 +37,12 @@ kolor ciemnosco:
     text-align: center;
     color: antiquewhite;
     font-size: 3vw;
-    text-shadow: 4px 4px 2px saddlebrown; }
+    text-shadow: 4px 4px 2px #814945; }
   .duzyTytul p {
     text-align: center;
     color: antiquewhite;
     font-size: 2vw;
-    text-shadow: 4px 4px 2px saddlebrown; }
+    text-shadow: 4px 4px 2px #814945; }
 
 .obramowanie-przycisku {
   display: flex;
@@ -57,7 +57,7 @@ kolor ciemnosco:
   width: 14vw;
   border: none;
   color: antiquewhite;
-  background-color: rgba(66, 49, 55, 0.8); }
+  background-color: rgba(129, 73, 69, 0.82); }
   .przycisk-zapisz-sie:hover {
     border: double; }
   .przycisk-zapisz-sie a {

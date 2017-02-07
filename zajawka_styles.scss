@@ -21,7 +21,7 @@ kolor ciemnosco:
 $color_ciemnosci: #423137;
 
 $color_duzych_napisow: antiquewhite;
-$color_cienia_duzych_napisow: saddlebrown;
+$color_ozdob: #814945;
 
 $big_font_size: 10vw;
 
@@ -51,14 +51,14 @@ $big_font_size: 10vw;
       text-align: center;
       color: $color_duzych_napisow;
       font-size: $big_font_size*0.3;
-      text-shadow: 4px 4px 2px  $color_cienia_duzych_napisow;
+      text-shadow: 4px 4px 2px  $color_ozdob;
     }
 
      p {
       text-align: center;
       color: $color_duzych_napisow;
       font-size: $big_font_size*0.2;
-      text-shadow: 4px 4px 2px  $color_cienia_duzych_napisow;
+      text-shadow: 4px 4px 2px  $color_ozdob;
 
 
     }
@@ -82,8 +82,7 @@ $big_font_size: 10vw;
   width: 14vw;
   border: none;
   color: $color_duzych_napisow;
-  background-color: transparentize($color_ciemnosci, 0.2) ;
-
+  background-color: transparentize($color_ozdob, 0.18);
   &:hover {
     border: double;
   }
