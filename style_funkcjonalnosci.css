@@ -1,47 +1,42 @@
-/*
-Error: Invalid CSS after "...osci: 10px 10px": expected "{", was ";"
-        on line 12 of style_funkcjonalnosci.scss
+.funkcjonalnosci {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  background-color: antiquewhite;
+  padding: 30px 15px; }
+  .funkcjonalnosci .styl_ramki_funkcjonalnosci {
+    text-align: center;
+    border-radius: 5%;
+    box-shadow: 2px 2px 6px #29140a;
+    background-color: #814945;
+    width: 220px;
+    margin: 10px 10px;
+    color: antiquewhite;
+    transition: background-color 2s; }
+    .funkcjonalnosci .styl_ramki_funkcjonalnosci:hover {
+      background-color: rgba(129, 54, 10, 0.91); }
+    .funkcjonalnosci .styl_ramki_funkcjonalnosci h1 {
+      font-size: 20px; }
+    .funkcjonalnosci .styl_ramki_funkcjonalnosci .ikona_funkcjonalnosci {
+      margin: 20px auto;
+      display: block;
+      background-color: antiquewhite;
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      line-height: 35px; }
+      .funkcjonalnosci .styl_ramki_funkcjonalnosci .ikona_funkcjonalnosci img {
+        vertical-align: middle; }
+    .funkcjonalnosci .styl_ramki_funkcjonalnosci p {
+      margin: 10px;
+      padding: 10px; }
+    .funkcjonalnosci .styl_ramki_funkcjonalnosci .opis_funkcjonalnosci {
+      color: antiquewhite; }
+      .funkcjonalnosci .styl_ramki_funkcjonalnosci .opis_funkcjonalnosci .lista_funkcjonalnosci {
+        list-style: circle;
+        text-align: left; }
 
-7: 
-8: $szerokosc_ramki_funkcjonalnosci: 220px;
-9: $kolor_textu_funkcjonalnosci: antiquewhite;
-10: $kolor_opisu_tekstu_funkcjonalnosci: antiquewhite;
-11: <<<<<<< HEAD
-12: $marginesy_ramek_funkcjonalnosci: 10px 10px;
-13: =======
-14: $marginesy_ramek_funkcjonalnosci: 0 15px;
-15: >>>>>>> origin/feature/FD6K8-6_funkcjonalnosci
-16: $tlo_ramki_funkcjonalnosci: #814945;
-17: 
-
-Backtrace:
-style_funkcjonalnosci.scss:12
-/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/scss/parser.rb:1181:in `expected'
-/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/scss/parser.rb:1115:in `expected'
-/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/scss/parser.rb:1110:in `tok!'
-/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/scss/parser.rb:654:in `block'
-/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/scss/parser.rb:649:in `ruleset'
-/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/scss/parser.rb:673:in `block_child'
-/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/scss/parser.rb:666:in `block_contents'
-/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/scss/parser.rb:123:in `stylesheet'
-/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/scss/parser.rb:39:in `parse'
-/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/engine.rb:403:in `_to_tree'
-/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
-/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
-/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/plugin.rb:82:in `update_stylesheets'
-/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:363:in `watch_or_update'
-/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/exec/base.rb:52:in `parse'
-/var/lib/gems/1.9.1/gems/sass-3.4.21/lib/sass/exec/base.rb:19:in `parse!'
-/var/lib/gems/1.9.1/gems/sass-3.4.21/bin/scss:13:in `<top (required)>'
-/usr/local/bin/scss:23:in `load'
-/usr/local/bin/scss:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...osci: 10px 10px\": expected \"{\", was \";\"\A         on line 12 of style_funkcjonalnosci.scss\A \A 7: \A 8: $szerokosc_ramki_funkcjonalnosci: 220px;\A 9: $kolor_textu_funkcjonalnosci: antiquewhite;\A 10: $kolor_opisu_tekstu_funkcjonalnosci: antiquewhite;\A 11: <<<<<<< HEAD\A 12: $marginesy_ramek_funkcjonalnosci: 10px 10px;\A 13: =======\A 14: $marginesy_ramek_funkcjonalnosci: 0 15px;\A 15: >>>>>>> origin/feature/FD6K8-6_funkcjonalnosci\A 16: $tlo_ramki_funkcjonalnosci: #814945;\A 17: "; }
+/*# sourceMappingURL=style_funkcjonalnosci.css.map */

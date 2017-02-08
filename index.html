@@ -5,8 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="zajawka_styles.css">
+    <link rel="stylesheet" href="style_funkcjonalnosci.css">
+    <!--<link rel="stylesheet" href="styles.css">-->
+    <title>SoundTrip</title>
 </head>
 <body>
 
@@ -18,13 +20,87 @@
     </div>
 
     <div class="zajawka">
-        zajawka
+
+        <div class="duzyTytul">
+            <div class="logo_z_napisem">
+                <a href="#soundtrip">
+                    <img src="./Grafiki/LogoSoundtrip.png" />
+                </a>
+                <h1 id="soundtrip">
+                    SoundTrip
+                </h1>
+            </div>
+
+            <h2>
+                Trip to sound
+            </h2>
+            <p>
+                Festiwal w planach? Obczaj miejscówkę!
+            </p>
+            <div class="obramowanie-przycisku">
+
+                <a href="#zapis"><button class="przycisk-zapisz-sie">
+                    Zapisz sie
+                </button></a>
+            </div>
+
+        </div>
+        <!--<a href="#zapis" onclick="app.scrollTo(event, '#zapis')" class="btn btn-lg-2 is-blue has-margin-top ">Zapisz się</a>-->
+
+
     </div>
 </header>
 
 <main>
     <div class="opis">
+        <section class="funkcjonalnosci">
 
+
+            <section class="styl_ramki_funkcjonalnosci">
+                <figure class="ikona_funkcjonalnosci">
+                    <img src="obrazki/iconmusic111.svg" alt="ikona1">
+                </figure>
+                <h1>Twój koncert!</h1>
+                <p class="opis_funkcjonalnosci"> Znajdź swoje wydarzenie muzyczne, wyszukując rodzaju muzyki, miejsca lub daty wydarzenia</p>
+            </section>
+
+
+            <section class="styl_ramki_funkcjonalnosci">
+                <figure class="ikona_funkcjonalnosci">
+                    <img src="obrazki/iconmusic2.svg" alt="ikona2">
+                </figure>
+                <h1>Więcej zabawy!</h1>
+                <div class="opis_funkcjonalnosci">
+                    <p class="opis_funkcjonalnosci"> Znajdź dodatkowe atrakcje, w pobliżu Twojego koncertu:</p>
+                    <ul class="lista_funkcjonalnosci">
+                        <li>Gastronomia</li>
+                        <li>Atrakcje turystyczne</li>
+                        <li>Nocleg</li>
+                        <li>Dojazd</li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="styl_ramki_funkcjonalnosci">
+                <figure class="ikona_funkcjonalnosci">
+                    <img src="obrazki/iconmusic3.svg" alt="ikona3">
+                </figure>
+                <h1>Kup kup kup!</h1>
+                <p class="opis_funkcjonalnosci"> Lokalizacje gdzie możesz zakupić bilety na wygrane atrakcje</p>
+            </section>
+
+
+            <section class="styl_ramki_funkcjonalnosci">
+                <figure class="ikona_funkcjonalnosci">
+                    <img src="obrazki/iconmusic4.svg" alt="ikona4">
+                </figure>
+                <h1>Zabierz innych!</h1>
+                <p class="opis_funkcjonalnosci">Stwórz swój plan wydarzenia i zaproś na niego swoich znajomych</p>
+            </section>
+
+
+        </section>
     </div>
 
     <div class="zapis" id="zapis">
