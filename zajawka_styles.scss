@@ -36,6 +36,22 @@ $big_font_size: 10vw;
 
 }
 
+
+.logo_z_napisem {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  a {
+    align-self: flex-end;
+    margin-right: 1vw;
+    img {
+      height: $big_font_size*0.8;
+    }
+
+  }
+}
+
 .duzyTytul {
   height: 700px;
 

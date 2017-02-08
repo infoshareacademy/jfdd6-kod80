@@ -25,6 +25,16 @@ kolor ciemnosco:
   background-repeat: no-repeat;
   background-color: #423137; }
 
+.logo_z_napisem {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .logo_z_napisem a {
+    align-self: flex-end;
+    margin-right: 1vw; }
+    .logo_z_napisem a img {
+      height: 8vw; }
+
 .duzyTytul {
   height: 700px; }
   .duzyTytul h1 {
