@@ -1,196 +1,191 @@
 <!doctype html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-    <!-- Latest compiled and minified CSS -->
+  <!-- Latest compiled and minified CSS -->
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="zajawka_styles.css">
-    <link rel="stylesheet" href="style_funkcjonalnosci.css">
-    <link rel="stylesheet" href="nawigacja_styles.css">
-    <link rel="stylesheet" href="style_formularz.css">
-    <!--<link rel="stylesheet" href="styles.css">-->
-    <title>SoundTrip</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="zajawka_styles.css">
+  <link rel="stylesheet" href="style_funkcjonalnosci.css">
+  <link rel="stylesheet" href="nawigacja_styles.css">
+  <link rel="stylesheet" href="style_formularz.css">
+  <!--<link rel="stylesheet" href="styles.css">-->
+  <title>SoundTrip</title>
 </head>
-<body  data-spy="scroll" data-target="#navbar-example">
+<body data-spy="scroll" data-target="#navbar-example">
 
 
 <header>
 
 
-
-    <nav class="navbar navbar-default nawigacja">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-
-
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#soundtrip"><img src="./Grafiki/LogoSoundtrip.png" /></a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#zajawka">Zajawka</a></li>
-                    <li><a href="#opis">Opis</a></li>
-                    <li><a href="#zapis">Zapisz się</a></li>
-                    <li><a href="#dlugi_opis">Dowiedz się więcej</a></li>
-                    <li><a href="#o_nas">O nas</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar navbar-default nawigacja">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
 
 
-    <div class="zajawka" id="zajawka">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#soundtrip"><img src="./Grafiki/LogoSoundtrip.png"/></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#zajawka">Zajawka</a></li>
+          <li><a href="#opis">Opis</a></li>
+          <li><a href="#zapis">Zapisz się</a></li>
+          <li><a href="#dlugi_opis">Dowiedz się więcej</a></li>
+          <li><a href="#o_nas">O nas</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-        <div class="duzyTytul">
-            <div class="logo_z_napisem">
-                <a href="#soundtrip">
-                    <img src="./Grafiki/LogoSoundtrip.png" />
-                </a>
-                <h1 id="soundtrip">
-                    SoundTrip
-                </h1>
-            </div>
 
-            <h2>
-                Trip to sound
-            </h2>
-            <p>
-                Festiwal w planach? Obczaj miejscówkę!
-            </p>
-            <div class="obramowanie-przycisku">
+  <div class="zajawka" id="zajawka">
 
-                <a href="#zapis"><button class="przycisk-zapisz-sie">
-                    Zapisz sie
-                </button></a>
-            </div>
+    <div class="duzyTytul">
+      <div class="logo_z_napisem">
+        <a href="#soundtrip">
+          <img src="./Grafiki/LogoSoundtrip.png"/>
+        </a>
+        <h1 id="soundtrip">
+          SoundTrip
+        </h1>
+      </div>
 
-        </div>
-        <!--<a href="#zapis" onclick="app.scrollTo(event, '#zapis')" class="btn btn-lg-2 is-blue has-margin-top ">Zapisz się</a>-->
+      <h2>
+        Trip to sound
+      </h2>
+      <p>
+        Festiwal w planach? Obczaj miejscówkę!
+      </p>
+      <div class="obramowanie-przycisku">
 
+        <a href="#zapis">
+          <button class="przycisk-zapisz-sie">
+            Zapisz sie
+          </button>
+        </a>
+      </div>
 
     </div>
+    <!--<a href="#zapis" onclick="app.scrollTo(event, '#zapis')" class="btn btn-lg-2 is-blue has-margin-top ">Zapisz się</a>-->
+
+
+  </div>
 </header>
 
 <main>
-    <div class="opis" id="opis">
-        <section class="funkcjonalnosci">
+  <div class="opis" id="opis">
+    <section class="funkcjonalnosci">
 
 
-            <section class="styl_ramki_funkcjonalnosci">
-                <figure class="ikona_funkcjonalnosci">
-                    <img src="obrazki/iconmusic111.svg" alt="ikona1">
-                </figure>
-                <h1>Twój koncert!</h1>
-                <p class="opis_funkcjonalnosci"> Znajdź swoje wydarzenie muzyczne, wyszukując rodzaju muzyki, miejsca lub daty wydarzenia</p>
-            </section>
+      <section class="styl_ramki_funkcjonalnosci">
+        <figure class="ikona_funkcjonalnosci">
+          <img src="obrazki/iconmusic111.svg" alt="ikona1">
+        </figure>
+        <h1>Twój koncert!</h1>
+        <p class="opis_funkcjonalnosci"> Znajdź swoje wydarzenie muzyczne, wyszukując rodzaju muzyki, miejsca lub daty
+          wydarzenia</p>
+      </section>
 
 
-            <section class="styl_ramki_funkcjonalnosci">
-                <figure class="ikona_funkcjonalnosci">
-                    <img src="obrazki/iconmusic2.svg" alt="ikona2">
-                </figure>
-                <h1>Więcej zabawy!</h1>
-                <div class="opis_funkcjonalnosci">
-                    <p class="opis_funkcjonalnosci"> Znajdź dodatkowe atrakcje, w pobliżu Twojego koncertu:</p>
-                    <ul class="lista_funkcjonalnosci">
-                        <li>Gastronomia</li>
-                        <li>Atrakcje turystyczne</li>
-                        <li>Nocleg</li>
-                        <li>Dojazd</li>
-                    </ul>
-                </div>
-            </section>
+      <section class="styl_ramki_funkcjonalnosci">
+        <figure class="ikona_funkcjonalnosci">
+          <img src="obrazki/iconmusic2.svg" alt="ikona2">
+        </figure>
+        <h1>Więcej zabawy!</h1>
+        <div class="opis_funkcjonalnosci">
+          <p class="opis_funkcjonalnosci"> Znajdź dodatkowe atrakcje, w pobliżu Twojego koncertu:</p>
+          <ul class="lista_funkcjonalnosci">
+            <li>Gastronomia</li>
+            <li>Atrakcje turystyczne</li>
+            <li>Nocleg</li>
+            <li>Dojazd</li>
+          </ul>
+        </div>
+      </section>
 
 
-            <section class="styl_ramki_funkcjonalnosci">
-                <figure class="ikona_funkcjonalnosci">
-                    <img src="obrazki/iconmusic3.svg" alt="ikona3">
-                </figure>
-                <h1>Kup kup kup!</h1>
-                <p class="opis_funkcjonalnosci"> Lokalizacje gdzie możesz zakupić bilety na wygrane atrakcje</p>
-            </section>
+      <section class="styl_ramki_funkcjonalnosci">
+        <figure class="ikona_funkcjonalnosci">
+          <img src="obrazki/iconmusic3.svg" alt="ikona3">
+        </figure>
+        <h1>Kup kup kup!</h1>
+        <p class="opis_funkcjonalnosci"> Lokalizacje gdzie możesz zakupić bilety na wygrane atrakcje</p>
+      </section>
 
 
-            <section class="styl_ramki_funkcjonalnosci">
-                <figure class="ikona_funkcjonalnosci">
-                    <img src="obrazki/iconmusic4.svg" alt="ikona4">
-                </figure>
-                <h1>Zabierz innych!</h1>
-                <p class="opis_funkcjonalnosci">Stwórz swój plan wydarzenia i zaproś na niego swoich znajomych</p>
-            </section>
+      <section class="styl_ramki_funkcjonalnosci">
+        <figure class="ikona_funkcjonalnosci">
+          <img src="obrazki/iconmusic4.svg" alt="ikona4">
+        </figure>
+        <h1>Zabierz innych!</h1>
+        <p class="opis_funkcjonalnosci">Stwórz swój plan wydarzenia i zaproś na niego swoich znajomych</p>
+      </section>
 
 
-        </section>
-    </div>
+    </section>
+  </div>
 
-    <div class="zapis" id="zapis">
+  <div class="zapis" id="zapis">
 
-        <h2 class="naglowek_formularza">Zapisz się do nas, a wyślemy Ci informację o premierze naszej aplikacji!!</h2>
-
-
-
-        <!--<form>-->
-            <!--<div class="">-->
-                <!--<label>-->
-                <!--Imię-->
-                <!--<input type="text" name="imie" required>-->
-                <!--</label>-->
-            <!--</div>-->
-
-            <!--<div>-->
-                <!--<label class="email_email">-->
-                <!--E-mail-->
-                <!--<input type="email" name="email" required>-->
-                <!--</label>-->
-            <!--</div>-->
-            <!--<span> Nie martw się! Podany przez Ciebie mail jest bezpieczny z nami!</span>-->
-
-            <!--<button>Wyślij</button>-->
-        <!--</form>-->
+    <h2 class="naglowek_formularza">Zapisz się do nas, a wyślemy Ci informację o premierze naszej aplikacji!!</h2>
 
 
+    <!--<form>-->
+    <!--<div class="">-->
+    <!--<label>-->
+    <!--Imię-->
+    <!--<input type="text" name="imie" required>-->
+    <!--</label>-->
+    <!--</div>-->
+
+    <!--<div>-->
+    <!--<label class="email_email">-->
+    <!--E-mail-->
+    <!--<input type="email" name="email" required>-->
+    <!--</label>-->
+    <!--</div>-->
+    <!--<span> Nie martw się! Podany przez Ciebie mail jest bezpieczny z nami!</span>-->
+
+    <!--<button>Wyślij</button>-->
+    <!--</form>-->
 
 
+    <form class="formularz">
+      <div class="pola_emaila">
+        <input type="text" placeholder="Imię" required>
+        <input type="email" placeholder="e-mail" required>
+      </div>
+    </form>
+
+    <div class="politka_bezpieczenstwa"> Nie martw się! Podany przez Ciebie mail jest bezpieczny z nami!</div>
+
+    <button class="button_od_maila">Wyślij</button>
 
 
-        <form class="formularz">
-            <div class="pola_emaila">
-                    <input type="text" placeholder="Imię" required>
-                    <input type="email" placeholder="e-mail" required>
-            </div>
-        </form>
+  </div>
 
-            <div class="politka_bezpieczenstwa"> Nie martw się! Podany przez Ciebie mail jest bezpieczny z nami!</div>
-
-            <button class="button_od_maila">Wyślij</button>
-
-
-
-
-
-
-    </div>
-
-    <div class="dlugi_opis" id="dlugi_opis">
-    </div>
+  <div class="dlugi_opis" id="dlugi_opis">
+  </div>
 
 </main>
 
 <footer>
 
-    <div class="footer">
-        <section class="o_nas" id="o_nas"></section>
-    </div>
+  <div class="footer">
+    <section class="o_nas" id="o_nas"></section>
+  </div>
 
 </footer>
 
@@ -199,7 +194,6 @@
 <script src="./bootstrap/bootstrap.min.js"></script>
 
 </body>
-
 
 
 </html>
