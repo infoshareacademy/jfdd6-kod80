@@ -17,68 +17,79 @@
 </head>
 <body  data-spy="scroll" data-target="#navbar-example">
 
-
 <header>
+  <nav class="navbar navbar-default nawigacja">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#navbar"
+                aria-expanded="false"
+                aria-controls="navbar">
 
+          <span class="sr-only">Toggle navigation</span>
 
+          <span class="icon-bar"></span>
 
-    <nav class="navbar navbar-default nawigacja">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
+          <span class="icon-bar"></span>
 
+          <span class="icon-bar"></span>
+        </button>
 
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#soundtrip"><img src="./Grafiki/LogoSoundtrip.png" /></a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#zajawka">Zajawka</a></li>
-                    <li><a href="#opis">Opis</a></li>
-                    <li><a href="#zapis">Zapisz się</a></li>
-                    <li><a href="#dlugi_opis">Dowiedz się więcej</a></li>
-                    <li><a href="#o_nas">O nas</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        <a class="navbar-brand" href="#soundtrip">
+          <img src="./Grafiki/LogoSoundtrip.png"/>
+        </a>
+      </div>
 
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
 
-    <div class="zajawka" id="zajawka">
+          <li><a href="#zajawka">Zajawka</a></li>
 
-        <div class="duzyTytul">
-            <div class="logo_z_napisem">
-                <a href="#soundtrip">
-                    <img src="./Grafiki/LogoSoundtrip.png" />
-                </a>
-                <h1 id="soundtrip">
-                    SoundTrip
-                </h1>
-            </div>
+          <li><a href="#opis">Opis</a></li>
 
-            <h2>
-                Trip to sound
-            </h2>
-            <p>
-                Festiwal w planach? Obczaj miejscówkę!
-            </p>
-            <div class="obramowanie-przycisku">
+          <li><a href="#zapis">Zapisz się</a></li>
 
-                <a href="#zapis"><button class="przycisk-zapisz-sie">
-                    Zapisz sie
-                </button></a>
-            </div>
+          <li><a href="#dlugi_opis">Dowiedz się więcej</a></li>
 
-        </div>
-        <!--<a href="#zapis" onclick="app.scrollTo(event, '#zapis')" class="btn btn-lg-2 is-blue has-margin-top ">Zapisz się</a>-->
+          <li><a href="#o_nas">O nas</a></li>
 
-
+        </ul>
+      </div>
     </div>
+  </nav>
+
+  <div class="zajawka" id="zajawka">
+    <div class="duzyTytul">
+      <div class="logo_z_napisem">
+        <a href="#soundtrip">
+          <img src="./Grafiki/LogoSoundtrip.png"/>
+        </a>
+
+        <h1 id="soundtrip">
+          SoundTrip
+        </h1>
+      </div>
+
+      <h2>
+        Trip to sound
+      </h2>
+
+      <p>
+        Festiwal w planach? Obczaj miejscówkę!
+      </p>
+
+      <div class="obramowanie-przycisku">
+        <a href="#zapis">
+          <button class="przycisk-zapisz-sie">
+            Zapisz sie
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
 </header>
 
 <main>
