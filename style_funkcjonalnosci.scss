@@ -1,19 +1,8 @@
-
-//kolory z zajawki
-$color_ciemnosci: #423137;
-$color_duzych_napisow: antiquewhite;
-$color_cienia_duzych_napisow: saddlebrown;
-
-
 $szerokosc_ramki_funkcjonalnosci: 220px;
 $kolor_textu_funkcjonalnosci: antiquewhite;
 $kolor_opisu_tekstu_funkcjonalnosci: antiquewhite;
 $marginesy_ramek_funkcjonalnosci: 10px 10px;
 $tlo_ramki_funkcjonalnosci: #814945;
-
-
-
-
 
 .funkcjonalnosci {
   box-sizing: border-box;
@@ -22,28 +11,23 @@ $tlo_ramki_funkcjonalnosci: #814945;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
-  background-color: antiquewhite; //do obgadania--------white
+  background-color: antiquewhite;
   padding: 30px 15px;
-
 
   .styl_ramki_funkcjonalnosci {
     text-align: center;
     border-radius: 5%;
     box-shadow: 2px 2px 6px #29140a;
-
-    //border: solid 1px #2721ff;
-
     background-color: $tlo_ramki_funkcjonalnosci;
     width: $szerokosc_ramki_funkcjonalnosci;
     margin: $marginesy_ramek_funkcjonalnosci;
     color: $kolor_textu_funkcjonalnosci;
     transition: background-color 2s;
-    &:hover{
+    &:hover {
       background-color: rgba(129, 54, 10, 0.91);
-
     }
 
-    h1{
+    h1 {
       font-size: 20px;
     }
 
@@ -55,7 +39,7 @@ $tlo_ramki_funkcjonalnosci: #814945;
       height: 40px;
       border-radius: 100%;
       line-height: 35px;
-      img{
+      img {
         vertical-align: middle;
       }
     }
@@ -63,31 +47,17 @@ $tlo_ramki_funkcjonalnosci: #814945;
     p {
       margin: 10px;
       padding: 10px;
-
-
-
-
-      //border: solid 3px #6dfa35; //to chcemu kwa ta ramkcze czy nie?
     }
 
-    .opis_funkcjonalnosci{
+    .opis_funkcjonalnosci {
       color: $kolor_opisu_tekstu_funkcjonalnosci;
-      .lista_funkcjonalnosci{
-        list-style: circle; //to chcemu kwa ta kropki czy nie?
+
+      .lista_funkcjonalnosci {
+        list-style: circle;
         text-align: left;
-
-
       }
     }
-
   }
-
 }
-
-
-
-
-//class="opis_funkcjonalnosci"
-
 
 
