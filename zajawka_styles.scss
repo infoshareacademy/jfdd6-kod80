@@ -1,0 +1,108 @@
+
+/* KOLORY
+#fad290
+#db8e58
+
+FAD290
+FFCF80
+FFC566
+
+246DB2
+66B4FF
+
+kolory napisow
+antiquewhite
+
+kolor ciemnosco:
+423137
+
+*/
+
+$color_ciemnosci: #423137;
+
+$color_duzych_napisow: antiquewhite;
+$color_ozdob: #814945;
+
+$big_font_size: 10vw;
+
+.zajawka {
+  display: flex;
+  justify-content:center;
+  background-image: url(./Grafiki/ZajawkaFoto.jpg);
+  background-size: contain;
+  background-position: center top;
+  background-repeat:no-repeat;
+  background-color: $color_ciemnosci;
+}
+
+
+.logo_z_napisem {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  a {
+    align-self: flex-end;
+    margin-right: 1vw;
+    img {
+      height: $big_font_size*0.8;
+    }
+
+  }
+}
+
+.duzyTytul {
+  height: 700px;
+
+     h1 {
+      font-size: $big_font_size;
+      padding: 0;
+      margin: 15% 0 0 0;
+      color: $color_duzych_napisow;
+    }
+
+     h2 {
+      margin: 0;
+      text-align: center;
+      color: $color_duzych_napisow;
+      font-size: $big_font_size*0.3;
+      text-shadow: 4px 4px 2px  $color_ozdob;
+    }
+
+     p {
+      text-align: center;
+      color: $color_duzych_napisow;
+      font-size: $big_font_size*0.2;
+      text-shadow: 4px 4px 2px  $color_ozdob;
+
+
+    }
+}
+
+
+.obramowanie-przycisku {
+  display: flex;
+  justify-content:center;
+
+  margin-top: 2.5em;
+}
+
+.przycisk-zapisz-sie {
+  font-size: $big_font_size*0.18;
+  height: 6vh;
+  padding: 0;
+  box-sizing: border-box;
+  width: 14vw;
+  border: none;
+  color: $color_duzych_napisow;
+  background-color: transparentize($color_ozdob, 0.18);
+  &:hover {
+    border: double;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+}
+

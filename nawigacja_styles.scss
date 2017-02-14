@@ -1,0 +1,81 @@
+$color_duzych_napisow: antiquewhite;
+
+.nawigacja {
+  box-sizing: border-box;
+  //display: flex;
+  //flex-direction: row;
+  //flex-wrap: wrap;
+  justify-content: center;
+  position: fixed;
+
+  background-color: transparentize(black, 0.8);
+  width: 100%;
+
+  padding: 4px 0;
+
+
+  //a {
+  //  margin: 5px;
+  //}
+}
+
+
+.navbar-brand img {
+  max-height: 40px;
+  padding-bottom: 5px;
+}
+
+//
+//.nawigacja {
+//  background: #e10126;
+//  padding: 0.7em 0;
+//  color: white;
+//}
+
+.navbar {
+  margin-bottom: 0;
+  border: none;
+}
+
+
+/*@media (min-width: 768px) .navbar {*/
+/*border: none;*/
+/*border-radius: 0;*/
+/*}*/
+
+.navbar-header {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+  /*color: white;*/
+  /*color: #FFF;*/
+}
+
+
+.navbar-right {
+  text-decoration: none;
+  font-size: 0.90em;
+  font-weight: 600;
+  text-transform: uppercase;
+  outline: 0;
+  margin-top: 0.3em;
+  /*color: white;*/
+}
+
+.navbar-default .navbar-brand, .navbar-default  .navbar-nav>li>a  {
+  color: #FFFFFF;
+}
+
+//.navbar-default .navbar-brand:hover, .navbar-default  .navbar-nav>li>a:hover {
+//  border: dotted;
+//}
+
+//.navbar-nav>li>a {
+//  color: #FFFFFF;
+//}
+
+.navbar-nav>li>a:hover {
+  border: solid;
+
+  color: greenyellow;
+}
