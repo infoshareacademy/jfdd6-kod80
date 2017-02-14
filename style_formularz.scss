@@ -1,10 +1,6 @@
 $text-color: #faebd7;
 $background-color: #814945;
 
-
-
-
-
 .zapis {
   background-color: #423137;
   text-align: center;
@@ -12,18 +8,21 @@ $background-color: #814945;
   padding: 10px;
 }
 
-.naglowek_formularza{
+.naglowek_formularza {
   margin: 0;
   padding: 20px 0 20px 0;
   text-shadow: 4px 4px 2px $background-color;
 }
 
-.button, input, optgroup, select, textarea {
+.button,
+input,
+optgroup,
+select,
+textarea {
   color: $background-color;
-
 }
 
-.formularz{
+.formularz {
   padding: 20px;
 }
 
@@ -31,29 +30,12 @@ form:invalid {
   background-color: #ff882b;
 }
 
-.politka_bezpieczenstwa{
+.politka_bezpieczenstwa {
   font-size: 10px;
 }
 
-.button_od_maila{
+.button_od_maila {
   margin: 10px 0 0 0;
   padding: 10px;
+  color: $background-color;
 }
-
-//@media screen and (min-width: 800px) {
-//  button, input, optgroup, select, textarea {
-//    padding: 10px;
-//  }
-//
-//}
-
-
-
-
-//@media screen and (min-width: 800px)   {
-//  .pola_emaila {
-//    display: flex;
-//    flex-direction: column;
-//  }
-//
-//}
