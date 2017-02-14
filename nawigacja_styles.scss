@@ -1,7 +1,9 @@
 $color_duzych_napisow: antiquewhite;
 
+$nav_menu_background: transparentize(black, 0.5);
+
 .nawigacja {
-  background-color: transparentize(black, 0.8);
+  background-color: $nav_menu_background;
   box-sizing: border-box;
   justify-content: center;
   padding: 4px 0;
@@ -17,6 +19,8 @@ $color_duzych_napisow: antiquewhite;
 .navbar {
   margin-bottom: 0;
   border: none;
+
+
 }
 
 .navbar-header {
@@ -36,11 +40,22 @@ $color_duzych_napisow: antiquewhite;
 
 .navbar-default {
   .navbar-brand, .navbar-nav>li>a {
-    color: #FFFFFF;
+    //color: #FFFFFF;
+    color: $color_duzych_napisow;
+
+  }
+
+  .navbar-nav>li>a {
+    box-sizing: border-box;
+    margin: 4px;
+  }
+
+
+  .navbar-nav>li>a:hover {
+    color: $color_duzych_napisow;
+    border: dotted;
+    border-width: 1px;
+    margin: 3px;
   }
 }
 
-.navbar-nav>li>a:hover {
-  border: solid;
-  color: greenyellow;
-}
