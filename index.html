@@ -157,29 +157,61 @@
     </section>
   </div>
 
-  <div class="zapis"
-       id="zapis">
-    <h2 class="naglowek_formularza">Zapisz się do nas, a wyślemy Ci informację o premierze naszej aplikacji!!</h2>
+  <section class="zapis"
+           id="zapis">
+    <div class="container">
+      <h2 class="naglowek_formularza">Zapraszamy Cię na premierę naszej aplikacji!</h2>
 
-    <form class="formularz">
-      <div class="pola_emaila">
-        <input type="text"
-               placeholder="Imię"
-               required>
+      <label class="opis_wiadomosci control-label col-xs-6 col-xs-offset-3">Informacja dla Ciebie:</label>
 
-        <input type="email"
-               placeholder="e-mail"
-               required>
+      <form>
+        <div class="form-group">
+          <div class="col-xs-6 col-xs-offset-0">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"
+                       value="safety"
+                       checked> Twój adres e-mail jest <a href="#">bezpieczny</a>, nikomu go nie udostępnimy.
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-xs-6 col-xs-offset-0">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"
+                       value="spam"
+                       checked> Wiadomość o premierze otrzymasz tylko jeden raz, nie spamujemy.
+              </label>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <form>
+        <div class="form-group">
+          <div class="col-xs-12">
+            <label>
+              <input type="email"
+                     placeholder="Podaj e-mail"
+                     class="wpisz_email"
+                     required>
+            </label>
+          </div>
+        </div>
+      </form>
+
+      <div class="col-xs-12">
+        <button class="btn btn-success">Wyślij</button>
       </div>
-    </form>
-
-    <div class="politka_bezpieczenstwa"> Nie martw się! Podany przez Ciebie mail jest bezpieczny z nami!</div>
-
-    <button class="button_od_maila">Wyślij</button>
-  </div>
+    </div>
+  </section>
 
   <div class="dlugi_opis"
-       id="dlugi_opis"></div>
+       id="dlugi_opis">
+  </div>
 </main>
 
 <footer>
