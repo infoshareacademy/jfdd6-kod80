@@ -1,20 +1,4 @@
-
-/* KOLORY
-#fad290
-#db8e58
-
-FAD290
-FFCF80
-FFC566
-
-246DB2
-66B4FF
-*/
-
-$color_ciemnosci: #423137;
-$color_duzych_napisow: antiquewhite;
-$color_ozdob: #814945;
-$big_font_size: 10vw;
+@import "colors";
 
 .zajawka {
   display: flex;
