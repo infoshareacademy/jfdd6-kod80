@@ -25,11 +25,30 @@
   width: 250px;
   height: 350px;
   background-color: red;
+  transform: scale(1);
+  transition: all 1s ease;
+
+  &:hover {
+    .rotacja1, .rotacja2 {
+      opacity: 1;
+
+
+    }
+
+    .ikona1 {
+      visibility: visible;
+      padding-top: 50%
+    }
+
+    background-color: yellow;
+    transform: scale(0.9);
+    filter: brightness(0.7);
+  }
 }
 
 
 .pierwszy_div {
-  background-color: #1b6d85;
+  //background-color: #1b6d85;
   width: 100%;
   flex: 2;
   display: flex;
@@ -43,14 +62,14 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #854a71;
+  //background-color: #854a71;
   width: 100%;
   flex: 1;
 
 }
 
 .trzeci_div {
-  background-color: #74851d;
+  //background-color: #74851d;
   width: 100%;
   flex: 2;
   display: flex;
@@ -60,10 +79,16 @@
 
 .rotacja1 {
   position: absolute;
+  background-color: #2b542c;
   top: 50%;
   width: 100%;
   border-top: 1px black solid;
   transform: rotate(45deg);
+  opacity:0;
+  transition: all 1s linear;
+
+
+
 }
 
 .rotacja2 {
@@ -72,15 +97,34 @@
   width: 100%;
   border-top: 1px black solid;
   transform: rotate(-45deg);
+  opacity: 0;
+  transition: all 1s linear;
+
+
+}
+
+.ikona1 {
+  visibility: hidden;
+  margin: 0;
+  padding-top: 0;
+  transition: all 1s ease;
+
+
+}
+
+.ikona2 {
+
 }
 
 
+.ikona3 {
+
+}
 
 
+.ikona4 {
 
-
-
-
+}
 
 
 
