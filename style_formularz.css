@@ -9,20 +9,38 @@
   padding: 20px 0 20px 0;
   text-shadow: 4px 4px 2px #814945; }
 
-.button, input, optgroup, select, textarea {
+.opis_wiadomosci {
+  text-shadow: 4px 4px 2px #814945;
+  font-size: 20px; }
+
+.button,
+input,
+optgroup,
+select,
+textarea {
   color: #814945; }
 
 .formularz {
   padding: 20px; }
 
-form:invalid {
-  background-color: #ff882b; }
-
-.politka_bezpieczenstwa {
-  font-size: 10px; }
+.wpisz_email {
+  font-size: 20px;
+  text-align: center;
+  margin: 15px 0; }
 
 .button_od_maila {
   margin: 10px 0 0 0;
-  padding: 10px; }
+  padding: 10px;
+  color: #814945; }
+
+input:invalid {
+  background-color: #ffffff; }
+
+input:required {
+  border-color: forestgreen;
+  border-width: 5px; }
+
+input:required:invalid {
+  border-color: #ffb626; }
 
 /*# sourceMappingURL=style_formularz.css.map */
