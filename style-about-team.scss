@@ -15,26 +15,133 @@
 
 
 
+
+
+.o_mnie {
+  margin-left: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 350px;
+  background-color: red;
+}
+
+
+.pierwszy_div {
+  background-color: #1b6d85;
+  width: 100%;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+.drugi_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #854a71;
+  width: 100%;
+  flex: 1;
+
+}
+
+.trzeci_div {
+  background-color: #74851d;
+  width: 100%;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.rotacja1 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  border-top: 1px black solid;
+  transform: rotate(45deg);
+}
+
+.rotacja2 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  border-top: 1px black solid;
+  transform: rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //style do proby hovera:
 
-
-
-.div-podstawowy {
-  margin-left: 20px;
-  margin-bottom: 20px;
-  perspective: 300px;
-  transform-style:preserve-3d;
-}
-
-.karta {
-  width: 200px;
-  height: 300px;
-  background-color: #1b6d85;
-  transition: 1s transform;
-
-}
-
-.karta:hover {
-  transform: translate(100px 100px);
-
-}
+//
+//
+//.o_mnie {
+//  width: 300px;
+//  height: 415px;
+//
+//  margin: 20px;
+//}
+//
+//.agata {
+//  position: relative;
+//  width: 300px;
+//  height: 415px;
+//  backgroun-color: red;
+//  //background-image: url();
+//  //background-repeat: no-repeat;
+//  //background-position: center;
+//  transform: scale(1.1);
+//  transition: all 0.5s;
+//  box-shadow: 2px 2px 4px black;
+//  &:hover {
+//    transform: scale(1);
+//    filter: brightness(0.7);
+//  }
+//}
+//
+//.rotate1 {
+//  position: absolute;
+//  top: 50%;
+//  right: 25%;
+//  width: 50%;
+//  background-color: transparent;
+//  transform: rotate(45deg);
+//  border-top: 2px solid white;
+//  display: inline-flex;
+//  flex-direction: row;
+//  justify-content: space-between;
+//}
+//
+//.rotate2 {
+//  position: absolute;
+//  top: 50%;
+//  right: 25%;
+//  width: 50%;
+//  background-color: transparent;
+//  transform: rotate(-45deg);
+//  border-top: 2px solid white;
+//  display: inline-flex;
+//  flex-direction: row;
+//  justify-content: space-between;
+//}
+//
+//
+//.icon1 {
+//  transform: rotate(-45deg);
+//}
