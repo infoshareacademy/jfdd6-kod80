@@ -1,8 +1,4 @@
-$szerokosc_ramki_funkcjonalnosci: 220px;
-$kolor_textu_funkcjonalnosci: antiquewhite;
-$kolor_opisu_tekstu_funkcjonalnosci: antiquewhite;
-$marginesy_ramek_funkcjonalnosci: 10px 10px;
-$tlo_ramki_funkcjonalnosci: #814945;
+@import "colors";
 
 .funkcjonalnosci {
   box-sizing: border-box;

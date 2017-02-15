@@ -1,7 +1,4 @@
-$color_duzych_napisow: antiquewhite;
-$nav_menu_background: transparentize(black, 0.1);
-$color_tekst_menu: white;
-$color_tekst_menu_hover: orange;
+@import "colors";
 
 .nawigacja {
   background-color: $nav_menu_background;
@@ -20,8 +17,6 @@ $color_tekst_menu_hover: orange;
 .navbar {
   margin-bottom: 0;
   border: none;
-
-
 }
 
 .navbar-header {
