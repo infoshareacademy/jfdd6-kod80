@@ -1,10 +1,10 @@
 .nawigacja {
+  background-color: rgba(0, 0, 0, 0.9);
   box-sizing: border-box;
   justify-content: center;
+  padding: 4px 0;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.2);
-  width: 100%;
-  padding: 4px 0; }
+  width: 100%; }
 
 .navbar-brand img {
   max-height: 40px;
@@ -14,16 +14,10 @@
   margin-bottom: 0;
   border: none; }
 
-/*@media (min-width: 768px) .navbar {*/
-/*border: none;*/
-/*border-radius: 0;*/
-/*}*/
 .navbar-header {
   font-size: 2.5em;
   text-transform: uppercase;
-  font-weight: 700;
-  /*color: white;*/
-  /*color: #FFF;*/ }
+  font-weight: 700; }
 
 .navbar-right {
   text-decoration: none;
@@ -31,14 +25,24 @@
   font-weight: 600;
   text-transform: uppercase;
   outline: 0;
-  margin-top: 0.3em;
-  /*color: white;*/ }
+  margin-top: 0.3em; }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
-  color: #FFFFFF; }
+  color: white; }
+.navbar-default .navbar-nav > li > a {
+  box-sizing: border-box;
+  margin: 4px; }
+.navbar-default .navbar-nav > li > a:hover {
+  color: orange;
+  border: dotted;
+  border-width: 1px;
+  margin: 3px; }
 
-.navbar-nav > li > a:hover {
-  border: solid;
-  color: greenyellow; }
+@media screen and (max-width: 767px) {
+  .navbar-default .navbar-nav > li > a {
+    margin: 0px 1px 3px 1px; }
+  .navbar-default .navbar-nav > li > a:hover {
+    border-width: 1px;
+    margin: -1px 0px 2px 0px; } }
 
 /*# sourceMappingURL=nawigacja_styles.css.map */

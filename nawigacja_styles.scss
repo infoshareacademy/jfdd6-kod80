@@ -1,6 +1,7 @@
 $color_duzych_napisow: antiquewhite;
-
-$nav_menu_background: transparentize(black, 0.8);
+$nav_menu_background: transparentize(black, 0.1);
+$color_tekst_menu: white;
+$color_tekst_menu_hover: orange;
 
 .nawigacja {
   background-color: $nav_menu_background;
@@ -40,9 +41,7 @@ $nav_menu_background: transparentize(black, 0.8);
 
 .navbar-default {
   .navbar-brand, .navbar-nav>li>a {
-    //color: #FFFFFF;
-    color: $color_duzych_napisow;
-
+    color: $color_tekst_menu;
   }
 
   .navbar-nav>li>a {
@@ -50,12 +49,26 @@ $nav_menu_background: transparentize(black, 0.8);
     margin: 4px;
   }
 
-
   .navbar-nav>li>a:hover {
-    color: $color_duzych_napisow;
+    color: $color_tekst_menu_hover;
     border: dotted;
     border-width: 1px;
     margin: 3px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .navbar-default {
+
+    .navbar-nav>li>a {;
+      margin: 0px 1px 3px 1px;
+    }
+
+    .navbar-nav > li > a:hover {
+      border-width: 1px;
+      margin:  -1px 0px 2px 0px;
+    }
   }
 }
 
