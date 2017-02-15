@@ -18,144 +18,166 @@
 </head>
 <body data-spy="scroll" data-target="#navbar-example">
 
-<header>
-  <nav class="navbar navbar-default nawigacja">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button"
-                class="navbar-toggle collapsed"
-                data-toggle="collapse"
-                data-target="#navbar"
-                aria-expanded="false"
-                aria-controls="navbar">
+<nav class="navbar navbar-default nawigacja">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-expanded="false"
+              aria-controls="navbar">
 
-          <span class="sr-only">Toggle navigation</span>
+        <span class="sr-only">Toggle navigation</span>
 
-          <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
 
-          <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
 
-          <span class="icon-bar"></span>
-        </button>
+        <span class="icon-bar"></span>
+      </button>
 
-        <a class="navbar-brand" href="#">
-          <img src="./Grafiki/LogoSoundtrip.png"/>
-        </a>
-      </div>
-
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-
-          <li><a href="#zajawka">Zajawka</a></li>
-
-          <li><a href="#opis">Opis</a></li>
-
-          <li><a href="#zapis">Zapisz się</a></li>
-
-          <li><a href="#dlugi_opis">Dowiedz się więcej</a></li>
-
-          <li><a href="#o_nas">O nas</a></li>
-
-        </ul>
-      </div>
+      <a class="navbar-brand" href="#">
+        <img style="background: antiquewhite; border-radius: 50%"
+             src="./Grafiki/LogoSoundtrip.png"/>
+        <!--nie moge kurde wystylowac tego loga ani clasa lub w inny sposob jak tylko tak-->
+      </a>
     </div>
-  </nav>
 
-  <div class="zajawka" id="zajawka">
-    <div class="duzyTytul">
-      <div class="logo_z_napisem">
-        <a href="#soundtrip">
-          <img src="./Grafiki/LogoSoundtrip.png"/>
-        </a>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
 
+        <li><a href="#zajawka">Zajawka</a></li>
+
+        <li><a href="#opis">Opis</a></li>
+
+        <li><a href="#zapis">Zapisz się</a></li>
+
+        <li><a href="#dlugi_opis">Dowiedz się więcej</a></li>
+
+        <li><a href="#o_nas">O nas</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <section class="zajawka" id="zajawka">
+    <div class="container">
+      <div class="duzyTytul">
+        <div class="logo_z_napisem">
+
+          <a href="#soundtrip">
+            <img style="background: antiquewhite; border-radius: 50%"
+                 src="./Grafiki/LogoSoundtrip.png"/>
+            <!--nie moge kurde wystylowac tego loga ani clasa lub w inny sposob jak tylko tak-->
+          </a>
+
+        </div>
         <h1 id="soundtrip">
           SoundTrip
         </h1>
-      </div>
 
-      <h2>
-        Trip to sound
-      </h2>
 
-      <p>
-        Festiwal w planach? Obczaj miejscówkę!
-      </p>
+        <h2 class="braz-background">
+          Trip to sound
+        </h2>
 
-      <div class="obramowanie-przycisku">
-        <a href="#zapis">
-          <button class="przycisk-zapisz-sie">
-            Zapisz sie
-          </button>
-        </a>
+
+        <p class="braz-background">
+          Festiwal w planach? Obczaj miejscówkę!
+        </p>
+
+
+        <div class="obramowanie-przycisku">
+          <a href="#zapis">
+            <button class="przycisk-zapisz-sie">
+              Zapisz sie
+            </button>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 </header>
 
 <main>
-  <div class="opis"
-       id="opis">
-    <section class="funkcjonalnosci">
-      <section class="styl_ramki_funkcjonalnosci">
-        <figure class="ikona_funkcjonalnosci">
-          <img src="obrazki/iconmusic111.svg"
-               alt="ikona1">
-        </figure>
+  <section class="opis"
+           id="opis">
+    <div class="container">
+      <form>
+        <div class="form-group row">
+          <div class="col-xs-6 col-sm-4 col-sm-offset-1 col-md-3 col-lg-2">
+            <div class="styl_ramki_funkcjonalnosci">
+              <figure class="ikona_funkcjonalnosci">
+                <img src="obrazki/iconmusic111.svg"
+                     alt="ikona1">
+              </figure>
 
-        <h1>Twój koncert!</h1>
+              <h1>Twój koncert!</h1>
 
-        <p class="opis_funkcjonalnosci"> Znajdź swoje wydarzenie muzyczne, wyszukując rodzaju muzyki, miejsca lub daty
-          wydarzenia</p>
-      </section>
+              <p class="opis_funkcjonalnosci"> Znajdź swoje wydarzenie muzyczne, wyszukując rodzaju muzyki, miejsca lub
+                daty wydarzenia</p>
+            </div>
+          </div>
 
-      <section class="styl_ramki_funkcjonalnosci">
-        <figure class="ikona_funkcjonalnosci">
-          <img src="obrazki/iconmusic2.svg"
-               alt="ikona2">
-        </figure>
+          <div class="col-xs-6 col-sm-4 col-sm-offset-1 col-md-3 col-lg-2">
+            <div class="styl_ramki_funkcjonalnosci">
+              <figure class="ikona_funkcjonalnosci">
+                <img src="obrazki/iconmusic2.svg"
+                     alt="ikona2">
+              </figure>
 
-        <h1>Więcej zabawy!</h1>
+              <h1>Więcej zabawy!</h1>
 
-        <div class="opis_funkcjonalnosci">
-          <p class="opis_funkcjonalnosci"> Znajdź dodatkowe atrakcje, w pobliżu Twojego koncertu:</p>
+              <div class="opis_funkcjonalnosci">
+                <p class="opis_funkcjonalnosci"> Znajdź dodatkowe atrakcje, w pobliżu Twojego koncertu:</p>
 
-          <ul class="lista_funkcjonalnosci">
+                <ul class="lista_funkcjonalnosci">
 
-            <li>Gastronomia</li>
+                  <li>Gastronomia</li>
 
-            <li>Atrakcje turystyczne</li>
+                  <li>Atrakcje turystyczne</li>
 
-            <li>Nocleg</li>
+                  <li>Nocleg</li>
 
-            <li>Dojazd</li>
-          </ul>
+                  <li>Dojazd</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-sm-4 col-sm-offset-1 col-md-3 col-lg-2">
+            <div class="styl_ramki_funkcjonalnosci">
+              <figure class="ikona_funkcjonalnosci">
+                <img src="obrazki/iconmusic3.svg"
+                     alt="ikona3">
+              </figure>
+
+              <h1>Kup kup kup!</h1>
+
+              <p class="opis_funkcjonalnosci"> Lokalizacje gdzie możesz zakupić bilety na wygrane atrakcje</p>
+            </div>
+          </div>
+
+          <div class="col-xs-6 col-sm-4 col-sm-offset-1 col-md-3 col-lg-2">
+            <div class="styl_ramki_funkcjonalnosci">
+              <figure class="ikona_funkcjonalnosci">
+                <img src="obrazki/iconmusic4.svg"
+                     alt="ikona4">
+              </figure>
+
+              <h1>Zabierz innych!</h1>
+
+              <p class="opis_funkcjonalnosci">Stwórz swój plan wydarzenia i zaproś na niego swoich znajomych</p>
+            </div>
+          </div>
         </div>
-      </section>
-
-      <section class="styl_ramki_funkcjonalnosci">
-        <figure class="ikona_funkcjonalnosci">
-          <img src="obrazki/iconmusic3.svg"
-               alt="ikona3">
-        </figure>
-
-        <h1>Kup kup kup!</h1>
-
-        <p class="opis_funkcjonalnosci"> Lokalizacje gdzie możesz zakupić bilety na wygrane atrakcje</p>
-      </section>
-
-      <section class="styl_ramki_funkcjonalnosci">
-        <figure class="ikona_funkcjonalnosci">
-          <img src="obrazki/iconmusic4.svg"
-               alt="ikona4">
-        </figure>
-
-        <h1>Zabierz innych!</h1>
-
-        <p class="opis_funkcjonalnosci">Stwórz swój plan wydarzenia i zaproś na niego swoich znajomych</p>
-      </section>
-    </section>
-  </div>
+      </form>
+    </div>
+  </section>
 
   <section class="zapis"
            id="zapis">
@@ -218,6 +240,62 @@
   <div class="footer">
     <section class="o_nas"
              id="o_nas"></section>
+    <p>kjhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl
+      jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh lkjhj lkhkl hlkhhh lhlhlkhkhl jhlkhklhjlhkhjklhk jhlkh hjklhkl hh lkjh
+      lkjhj lkhkl hlkhhh lhlhlkhkhl l</p>
   </div>
 </footer>
 

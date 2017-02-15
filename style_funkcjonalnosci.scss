@@ -1,18 +1,22 @@
 @import "colors";
 
-.funkcjonalnosci {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
-  background-color: antiquewhite;
-  padding: 30px 15px;
+.opis{
+  background-color: $color_duzych_napisow;
+}
+
+//.funkcjonalnosci {
+//  //box-sizing: border-box;
+//  //display: flex;
+//  //flex-direction: row;
+//  //flex-wrap: wrap;
+//  //justify-content: space-around;
+//  //width: 100%;
+//  //background-color: antiquewhite;
+//  //padding: 30px 15px;
 
   .styl_ramki_funkcjonalnosci {
     text-align: center;
-    border-radius: 5%;
+    //border-radius: 5%;
     box-shadow: 2px 2px 6px #29140a;
     background-color: $tlo_ramki_funkcjonalnosci;
     width: $szerokosc_ramki_funkcjonalnosci;
@@ -41,7 +45,7 @@
     }
 
     p {
-      margin: 10px;
+      margin: 5px;
       padding: 10px;
     }
 
@@ -54,6 +58,6 @@
       }
     }
   }
-}
 
+//}
 

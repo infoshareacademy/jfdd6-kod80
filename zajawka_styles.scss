@@ -8,31 +8,39 @@
   background-position: center top;
   background-repeat: no-repeat;
   background-color: $color_ciemnosci;
+  height: auto;
+
 }
 
 .logo_z_napisem {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 22%;
 
-  a {
-    align-self: flex-end;
-    margin-right: 1vw;
-    img {
-      height: $big_font_size*0.8;
-    }
-
-  }
+//
+//  a {
+//    align-self: flex-end;
+//    margin-right: 1vw;
+//    img {
+//      height: $big_font_size*0.8;
+//    }
+//
+//  }
 }
 
 .duzyTytul {
-  height: 700px;
+  //height: 700px;
 
   h1 {
     font-size: $big_font_size;
     padding: 0;
-    margin: 15% 0 0 0;
+    margin: 5% 0 5% 0;
     color: $color_duzych_napisow;
+    text-align: center;
+    background-color: transparentize($color_ozdob, 0.18);
+
   }
 
   h2 {
@@ -55,8 +63,9 @@
 .obramowanie-przycisku {
   display: flex;
   justify-content: center;
+  margin-bottom: 10%;
 
-  margin-top: 2.5em;
+  //margin-top: 2.5em;
 }
 
 .przycisk-zapisz-sie {
@@ -75,6 +84,14 @@
   a {
     text-decoration: none;
   }
-
 }
 
+.braz-background{
+  background-color: transparentize($color_ozdob, 0.18);
+}
+
+//@media screen and (max-width: 768px){
+//  .zajawka{
+//    width: 570px;
+//  }
+//}
