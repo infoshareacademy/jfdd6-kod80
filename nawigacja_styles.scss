@@ -39,15 +39,24 @@
     color: $color_tekst_menu;
   }
   .navbar-nav > li > a:visited {
-    color: red;
+    color: $color_tekst_menu_active_focus;
+    border: dotted;
+    border-width: 1px;
+    margin: 3px;
   }
 
   .navbar-nav > li > a:active {
-    color: red;
+    color: $color_tekst_menu_active_focus;
+    border: dotted;
+    border-width: 1px;
+    margin: 3px;
   }
 
   .navbar-nav > li > a:focus {
-    color: red;
+    color: $color_tekst_menu_active_focus;
+    border: dotted;
+    border-width: 1px;
+    margin: 3px;
   }
 
   .navbar-nav>li>a {
