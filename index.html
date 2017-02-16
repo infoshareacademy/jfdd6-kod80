@@ -171,7 +171,8 @@
               <label>
                 <input type="checkbox"
                        value="safety"
-                       checked> Twój adres e-mail jest <a href="#">bezpieczny</a>, nikomu go nie udostępnimy.
+                       checked
+                       disabled> Twój adres e-mail jest <a href="#">bezpieczny</a>, nikomu go nie udostępnimy.
               </label>
             </div>
           </div>
@@ -183,14 +184,13 @@
               <label>
                 <input type="checkbox"
                        value="spam"
-                       checked> Wiadomość o premierze otrzymasz tylko jeden raz, nie spamujemy.
+                       checked
+                       disabled> Wiadomość o premierze otrzymasz tylko jeden raz, nie spamujemy.
               </label>
             </div>
           </div>
         </div>
-      </form>
 
-      <form>
         <div class="form-group">
           <div class="col-xs-12">
             <label>
@@ -204,7 +204,10 @@
       </form>
 
       <div class="col-xs-12">
-        <button class="btn btn-success">Wyślij</button>
+        <input type="submit"
+               class="btn btn-success przycisk-wyslij"
+               label="Wyślij"/>
+        <!--<button class="btn btn-success">Wyślij</button>-->
       </div>
     </div>
   </section>
