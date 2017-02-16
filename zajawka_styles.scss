@@ -13,7 +13,7 @@
 }
 
 .logo_z_napisem {
-  display: flex;
+  //display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -30,8 +30,17 @@
 //  }
 }
 
+
+.ob{
+  background: antiquewhite;
+  border-radius: 50%;
+}
+
+
 .duzyTytul {
   //height: 700px;
+  display: flex;
+  flex-direction: column;
 
   h1 {
     font-size: $big_font_size;

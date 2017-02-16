@@ -70,7 +70,7 @@
         <div class="logo_z_napisem">
 
           <a href="#soundtrip">
-            <img style="background: antiquewhite; border-radius: 50%"
+            <img class="ob"
                  src="./Grafiki/LogoSoundtrip.png"/>
             <!--nie moge kurde wystylowac tego loga ani clasa lub w inny sposob jak tylko tak-->
           </a>
@@ -107,9 +107,7 @@
   <section class="opis"
            id="opis">
     <div class="container">
-      <form>
-        <div class="form-group row">
-          <div class="col-xs-6 col-sm-4 col-sm-offset-1 col-md-3 col-lg-2">
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
             <div class="styl_ramki_funkcjonalnosci">
               <figure class="ikona_funkcjonalnosci">
                 <img src="obrazki/iconmusic111.svg"
@@ -123,7 +121,7 @@
             </div>
           </div>
 
-          <div class="col-xs-6 col-sm-4 col-sm-offset-1 col-md-3 col-lg-2">
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
             <div class="styl_ramki_funkcjonalnosci">
               <figure class="ikona_funkcjonalnosci">
                 <img src="obrazki/iconmusic2.svg"
@@ -149,7 +147,7 @@
             </div>
           </div>
 
-          <div class="col-xs-6 col-sm-4 col-sm-offset-1 col-md-3 col-lg-2">
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
             <div class="styl_ramki_funkcjonalnosci">
               <figure class="ikona_funkcjonalnosci">
                 <img src="obrazki/iconmusic3.svg"
@@ -162,7 +160,7 @@
             </div>
           </div>
 
-          <div class="col-xs-6 col-sm-4 col-sm-offset-1 col-md-3 col-lg-2">
+          <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3">
             <div class="styl_ramki_funkcjonalnosci">
               <figure class="ikona_funkcjonalnosci">
                 <img src="obrazki/iconmusic4.svg"
@@ -175,7 +173,6 @@
             </div>
           </div>
         </div>
-      </form>
     </div>
   </section>
 
@@ -205,14 +202,12 @@
               <label>
                 <input type="checkbox"
                        value="spam"
-                       checked> Wiadomość o premierze otrzymasz tylko jeden raz, nie spamujemy.
+                       checked disabled> Wiadomość o premierze otrzymasz tylko jeden raz, nie spamujemy.
               </label>
             </div>
           </div>
         </div>
-      </form>
 
-      <form>
         <div class="form-group">
           <div class="col-xs-12">
             <label>
@@ -223,11 +218,11 @@
             </label>
           </div>
         </div>
+        <div class="col-xs-12">
+          <input type="submit" class="btn btn-success przycisk-wyslij" label="Wyślij"/>
+        </div>
       </form>
 
-      <div class="col-xs-12">
-        <button class="btn btn-success">Wyślij</button>
-      </div>
     </div>
   </section>
 
