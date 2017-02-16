@@ -55,5 +55,8 @@ FFC566
   .navbar-default .navbar-nav > li > a:hover {
     border-width: 1px;
     margin: -1px 0px 2px 0px; } }
+@media screen and (max-width: 767px) {
+  .navbar-brand img {
+    display: none; } }
 
 /*# sourceMappingURL=nawigacja_styles.css.map */
