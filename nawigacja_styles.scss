@@ -38,18 +38,38 @@
   .navbar-brand, .navbar-nav>li>a {
     color: $color_tekst_menu;
   }
+  .navbar-nav > li > a:visited {
+    color: red;
+  }
+
+  .navbar-nav > li > a:active {
+    color: red;
+  }
+
+  .navbar-nav > li > a:focus {
+    color: red;
+  }
 
   .navbar-nav>li>a {
     box-sizing: border-box;
     margin: 4px;
   }
+  .navbar-nav>li>a:visited {
+    color: red;
+  }
 
+  .navbar-nav>li>a:active {
+    color: red;
+  }
   .navbar-nav>li>a:hover {
     color: $color_tekst_menu_hover;
     border: dotted;
     border-width: 1px;
     margin: 3px;
   }
+
+
+
 }
 
 
