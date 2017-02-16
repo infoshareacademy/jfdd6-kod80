@@ -17,115 +17,193 @@
 
 
 
+//----------------------------------------sekcja z krzyzykiem
+
+
+
+
+
+
+
+
+
+
+.ikona1, .ikona2, .ikona3, .ikona4 {
+  visibility: hidden;
+  position: relative;
+  transform: scale(0);
+  transition: all 1s ease;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 3px #9b9b9b;
+
+}
+
+.ikona1 {
+  top: -10%;
+  background-image: url(obrazki/icon-about-us/linkedin-icon.png);
+  //top: 0;
+}
+
+.ikona2 {
+  left: -10%;
+  background-image: url(obrazki/icon-about-us/about-me-icon.png);
+  //left: 0;
+}
+
+.ikona3 {
+  right: -10%;
+  //right: 0;
+  background-image: url(obrazki/icon-about-us/github-icon.png);
+}
+
+.ikona4 {
+  bottom: -10%;
+  //bottom: 0;
+  background-image: url(obrazki/icon-about-us/mail-icon.png);
+}
+
+
+
+
 .o_mnie {
   margin-left: 100px;
+  margin-bottom: 100px;
   position: relative;
   display: flex;
   flex-direction: column;
   width: 250px;
   height: 350px;
-  background-color: red;
+  background-color: #ffffff;
+  box-shadow: 3px 3px 8px black;
   transform: scale(1);
   transition: all 1s ease;
+
+  .rotacja1 {
+    position: absolute;
+    background-color: #2b542c;
+    top: 50%;
+    width: 100%;
+    border-top: 1px black solid;
+    transform: rotate(45deg);
+    opacity: 0;
+
+    transition: all 1s linear;
+
+  }
+
+  .rotacja2 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    border-top: 1px black solid;
+    transform: rotate(-45deg);
+    opacity: 0;
+    transition: all 1s linear;
+
+  }
+
+
 
   &:hover {
     .rotacja1, .rotacja2 {
       opacity: 1;
 
-
     }
 
     .ikona1 {
       visibility: visible;
-      padding-top: 50%
+      top: 25%;
+      transform: scale(1);
     }
 
-    background-color: yellow;
+    .ikona2 {
+      visibility: visible;
+      left: 20%;
+      transform: scale(1);
+
+    }
+
+    .ikona3 {
+      visibility: visible;
+      right: 20%;
+      transform: scale(1);
+    }
+
+    .ikona4 {
+      visibility: visible;
+      bottom: 25%;
+      transform: scale(1);
+    }
+
+    background-color: #ffffff;
     transform: scale(0.9);
     filter: brightness(0.7);
   }
-}
 
+  .pierwszy_div {
+    //background-color: #1b6d85;
+    width: 100%;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
 
-.pierwszy_div {
-  //background-color: #1b6d85;
-  width: 100%;
-  flex: 2;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
+  .drugi_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    //background-color: #854a71;
+    width: 100%;
+    flex: 1;
 
+  }
 
-.drugi_div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  //background-color: #854a71;
-  width: 100%;
-  flex: 1;
-
-}
-
-.trzeci_div {
-  //background-color: #74851d;
-  width: 100%;
-  flex: 2;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.rotacja1 {
-  position: absolute;
-  background-color: #2b542c;
-  top: 50%;
-  width: 100%;
-  border-top: 1px black solid;
-  transform: rotate(45deg);
-  opacity:0;
-  transition: all 1s linear;
+  .trzeci_div {
+    //background-color: #74851d;
+    width: 100%;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
 
 
 
 }
 
-.rotacja2 {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  border-top: 1px black solid;
-  transform: rotate(-45deg);
-  opacity: 0;
-  transition: all 1s linear;
 
 
-}
-
-.ikona1 {
-  visibility: hidden;
-  margin: 0;
-  padding-top: 0;
-  transition: all 1s ease;
 
 
-}
-
-.ikona2 {
-
-}
 
 
-.ikona3 {
-
-}
 
 
-.ikona4 {
 
-}
 
+
+//
+//.ikona2 {
+//  visibility: hidden;
+//  transition: all 1s ease;
+//}
+//
+//
+//.ikona3 {
+//  visibility: hidden;
+//  transition: all 1s ease;
+//}
+//
+//
+//.ikona4 {
+//  visibility: hidden;
+//  transition: all 1s ease;
+//}
+//
 
 
 
