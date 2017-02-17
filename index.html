@@ -171,8 +171,19 @@
               <label>
                 <input type="checkbox"
                        value="safety"
-                       checked> Twój adres e-mail jest <a href="#">bezpieczny</a>, nikomu go nie udostępnimy.
+                       checked
+                       disabled> Twój adres e-mail jest <a href="#popup1">bezpieczny</a>, nikomu go nie udostępnimy.
               </label>
+            </div>
+          </div>
+        </div>
+
+        <div id="popup1" class="overlay">
+          <div class="popup">
+            <h2>Polityka bezpieczeństwa</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+              Na podstawie przepisów prawnych zobowiązujemy się do bezpiecznego zarządzania powierzonymi przez Państwa adresami e-mail oraz do nie udostępnianie ich osobom trzecim.
             </div>
           </div>
         </div>
@@ -183,14 +194,13 @@
               <label>
                 <input type="checkbox"
                        value="spam"
-                       checked> Wiadomość o premierze otrzymasz tylko jeden raz, nie spamujemy.
+                       checked
+                       disabled> Wiadomość o premierze otrzymasz tylko jeden raz, nie spamujemy.
               </label>
             </div>
           </div>
         </div>
-      </form>
 
-      <form>
         <div class="form-group">
           <div class="col-xs-12">
             <label>
@@ -201,11 +211,14 @@
             </label>
           </div>
         </div>
-      </form>
 
-      <div class="col-xs-12">
-        <button class="btn btn-success">Wyślij</button>
-      </div>
+        <div class="col-xs-12">
+          <input type="submit"
+                 class="btn btn-success przycisk-wyslij"
+                 label="Wyślij"/>
+          <!--<button class="btn btn-success">Wyślij</button>-->
+        </div>
+      </form>
     </div>
   </section>
 
