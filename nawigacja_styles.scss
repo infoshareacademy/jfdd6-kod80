@@ -38,6 +38,26 @@
   .navbar-brand, .navbar-nav>li>a {
     color: $color_tekst_menu;
   }
+  .navbar-nav > li > a:visited {
+    color: $color_tekst_menu_active_focus;
+    border: dotted;
+    border-width: 1px;
+    margin: 3px;
+  }
+
+  .navbar-nav > li > a:active {
+    color: $color_tekst_menu_active_focus;
+    border: dotted;
+    border-width: 1px;
+    margin: 3px;
+  }
+
+  .navbar-nav > li > a:focus {
+    color: $color_tekst_menu_active_focus;
+    border: dotted;
+    border-width: 1px;
+    margin: 3px;
+  }
 
   .navbar-nav>li>a {
     box-sizing: border-box;
@@ -52,7 +72,6 @@
   }
 }
 
-
 @media screen and (max-width: 767px) {
   .navbar-default {
 
@@ -61,6 +80,11 @@
     }
 
     .navbar-nav > li > a:hover {
+      border-width: 1px;
+      margin:  -1px 0px 2px 0px;
+    }
+
+    .navbar-nav > li > a:focus {
       border-width: 1px;
       margin:  -1px 0px 2px 0px;
     }
