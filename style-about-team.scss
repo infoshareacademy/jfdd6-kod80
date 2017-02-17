@@ -1,0 +1,162 @@
+.o_nas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 50px 0;
+
+  .about_agata,
+  .about_karolina,
+  .about_marek,
+  .about_pawel {
+    margin: 0 20px;
+  }
+}
+
+.ikona1,
+.ikona2,
+.ikona3,
+.ikona4 {
+  visibility: hidden;
+  position: relative;
+  transform: scale(0);
+  transition: all 1s ease;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 3px #9b9b9b;
+}
+
+.o_mnie {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 300px;
+  background-color: #ffffff;
+  box-shadow: 3px 3px 8px #692121;
+  transform: scale(1);
+  transition: all 1s ease;
+
+  .pierwszy_div {
+    width: 100%;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .ikona1 {
+      top: -10%;
+      background-image: url(obrazki/icon-about-us/linkedin-icon.png);
+    }
+  }
+
+  .drugi_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+
+    .ikona2 {
+      left: -10%;
+      background-image: url(obrazki/icon-about-us/about-me-icon.png);
+    }
+
+    .ikona3 {
+      right: -10%;
+      background-image: url(obrazki/icon-about-us/github-icon.png);
+    }
+  }
+
+  .trzeci_div {
+    width: 100%;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    .ikona4 {
+      bottom: -10%;
+      background-image: url(obrazki/icon-about-us/mail-icon.png);
+    }
+  }
+
+  .rotacja1 {
+    position: absolute;
+    background-color: #2b542c;
+    top: 50%;
+    width: 100%;
+    border-top: 1px #3e190c solid;
+    transform: rotate(45deg) scale(0.1);
+    opacity: 0;
+    transition: all 1s linear;
+  }
+
+  .rotacja2 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    border-top: 1px #3e190c solid;
+    transform: rotate(-45deg) scale(0.1);
+    opacity: 0;
+    transition: all 1s linear;
+  }
+
+  .name {
+    opacity: 1;
+    position: absolute;
+    bottom: 10%;
+    left: 32%;
+    margin: auto;
+    font-size: 25px;
+    transition: opacity 0.3s linear;
+  }
+
+  &:hover {
+    background-color: #ffffff;
+    transform: scale(0.9);
+    filter: brightness(0.7);
+
+    .name {
+      opacity: 0;
+    }
+
+    .rotacja1,
+    .rotacja2 {
+      opacity: 0.7;
+    }
+
+    .rotacja1 {
+      transform: rotate(45deg) scale(1);
+    }
+
+    .rotacja2 {
+      transform: rotate(-45deg) scale(1);
+    }
+
+    .ikona1 {
+      visibility: visible;
+      top: 25%;
+      transform: scale(1);
+    }
+
+    .ikona2 {
+      visibility: visible;
+      left: 20%;
+      transform: scale(1);
+    }
+
+    .ikona3 {
+      visibility: visible;
+      right: 20%;
+      transform: scale(1);
+    }
+
+    .ikona4 {
+      visibility: visible;
+      bottom: 25%;
+      transform: scale(1);
+    }
+  }
+}
