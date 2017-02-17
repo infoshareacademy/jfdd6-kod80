@@ -1,20 +1,4 @@
-
-/* KOLORY
-#fad290
-#db8e58
-
-FAD290
-FFCF80
-FFC566
-
-246DB2
-66B4FF
-*/
-
-$color_ciemnosci: #423137;
-$color_duzych_napisow: antiquewhite;
-$color_ozdob: #814945;
-$big_font_size: 10vw;
+@import "colors";
 
 .zajawka {
   display: flex;
@@ -30,6 +14,7 @@ $big_font_size: 10vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 5em;
 
   a {
     align-self: flex-end;
@@ -42,13 +27,14 @@ $big_font_size: 10vw;
 }
 
 .duzyTytul {
-  height: 700px;
+  //height: 700px;
 
   h1 {
     font-size: $big_font_size;
     padding: 0;
     margin: 15% 0 0 0;
     color: $color_duzych_napisow;
+    text-shadow: 4px 4px 2px $color_ozdob;
   }
 
   h2 {
@@ -84,6 +70,7 @@ $big_font_size: 10vw;
   border: none;
   color: $color_duzych_napisow;
   background-color: transparentize($color_ozdob, 0.18);
+  margin-bottom: 2em;
   &:hover {
     border: double;
   }

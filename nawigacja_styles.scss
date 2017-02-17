@@ -1,7 +1,7 @@
-$color_duzych_napisow: antiquewhite;
+@import "colors";
 
 .nawigacja {
-  background-color: transparentize(black, 0.8);
+  background-color: $nav_menu_background;
   box-sizing: border-box;
   justify-content: center;
   padding: 4px 0;
@@ -36,11 +36,64 @@ $color_duzych_napisow: antiquewhite;
 
 .navbar-default {
   .navbar-brand, .navbar-nav>li>a {
-    color: #FFFFFF;
+    color: $color_tekst_menu;
+  }
+  .navbar-nav > li > a:visited {
+    color: $color_tekst_menu_active_focus;
+    border: dotted;
+    border-width: 1px;
+    margin: 3px;
+  }
+
+  .navbar-nav > li > a:active {
+    color: $color_tekst_menu_active_focus;
+    border: dotted;
+    border-width: 1px;
+    margin: 3px;
+  }
+
+  .navbar-nav > li > a:focus {
+    color: $color_tekst_menu_active_focus;
+    border: dotted;
+    border-width: 1px;
+    margin: 3px;
+  }
+
+  .navbar-nav>li>a {
+    box-sizing: border-box;
+    margin: 4px;
+  }
+
+  .navbar-nav>li>a:hover {
+    color: $color_tekst_menu_hover;
+    border: dotted;
+    border-width: 1px;
+    margin: 3px;
   }
 }
 
-.navbar-nav>li>a:hover {
-  border: solid;
-  color: greenyellow;
+@media screen and (max-width: 767px) {
+  .navbar-default {
+
+    .navbar-nav>li>a {;
+      margin: 0px 1px 3px 1px;
+    }
+
+    .navbar-nav > li > a:hover {
+      border-width: 1px;
+      margin:  -1px 0px 2px 0px;
+    }
+
+    .navbar-nav > li > a:focus {
+      border-width: 1px;
+      margin:  -1px 0px 2px 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand img {
+    display: none;
+  }
+
 }

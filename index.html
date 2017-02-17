@@ -40,7 +40,7 @@
           <span class="icon-bar"></span>
         </button>
 
-        <a class="navbar-brand" href="#soundtrip">
+        <a class="navbar-brand" href="#">
           <img src="./Grafiki/LogoSoundtrip.png"/>
         </a>
       </div>
@@ -97,90 +97,162 @@
 <main>
   <div class="opis"
        id="opis">
-    <section class="funkcjonalnosci">
-      <section class="styl_ramki_funkcjonalnosci">
-        <figure class="ikona_funkcjonalnosci">
-          <img src="obrazki/iconmusic111.svg"
-               alt="ikona1">
-        </figure>
+    <div class="container">
+      <section class="funkcjonalnosci">
+        <section class="styl_ramki_funkcjonalnosci">
+          <figure class="ikona_funkcjonalnosci">
+            <img src="obrazki/iconmusic111.svg"
+                 alt="ikona1">
+          </figure>
 
-        <h1>Twój koncert!</h1>
+          <h1>Twój koncert!</h1>
 
-        <p class="opis_funkcjonalnosci"> Znajdź swoje wydarzenie muzyczne, wyszukując rodzaju muzyki, miejsca lub daty
-          wydarzenia</p>
+          <p class="opis_funkcjonalnosci"> Znajdź swoje wydarzenie muzyczne, wyszukując rodzaju muzyki, miejsca lub daty
+            wydarzenia</p>
+        </section>
+
+        <section class="styl_ramki_funkcjonalnosci">
+          <figure class="ikona_funkcjonalnosci">
+            <img src="obrazki/iconmusic2.svg"
+                 alt="ikona2">
+          </figure>
+
+          <h1>Więcej zabawy!</h1>
+
+          <div class="opis_funkcjonalnosci">
+            <p class="opis_funkcjonalnosci"> Znajdź dodatkowe atrakcje, w pobliżu Twojego koncertu:</p>
+
+            <ul class="lista_funkcjonalnosci">
+
+              <li>Gastronomia</li>
+
+              <li>Atrakcje turystyczne</li>
+
+              <li>Nocleg</li>
+
+              <li>Dojazd</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="styl_ramki_funkcjonalnosci">
+          <figure class="ikona_funkcjonalnosci">
+            <img src="obrazki/iconmusic3.svg"
+                 alt="ikona3">
+          </figure>
+
+          <h1>Kup kup kup!</h1>
+
+          <p class="opis_funkcjonalnosci"> Lokalizacje gdzie możesz zakupić bilety na wygrane atrakcje</p>
+        </section>
+
+        <section class="styl_ramki_funkcjonalnosci">
+          <figure class="ikona_funkcjonalnosci">
+            <img src="obrazki/iconmusic4.svg"
+                 alt="ikona4">
+          </figure>
+
+          <h1>Zabierz innych!</h1>
+
+          <p class="opis_funkcjonalnosci">Stwórz swój plan wydarzenia i zaproś na niego swoich znajomych</p>
+        </section>
       </section>
+    </div>
+  </div>
 
-      <section class="styl_ramki_funkcjonalnosci">
-        <figure class="ikona_funkcjonalnosci">
-          <img src="obrazki/iconmusic2.svg"
-               alt="ikona2">
-        </figure>
+  <section class="zapis"
+           id="zapis">
+    <div class="container">
+      <h2 class="naglowek_formularza">Zapraszamy Cię na premierę naszej aplikacji!</h2>
 
-        <h1>Więcej zabawy!</h1>
+      <label class="opis_wiadomosci control-label col-xs-6 col-xs-offset-3">Informacja dla Ciebie:</label>
 
-        <div class="opis_funkcjonalnosci">
-          <p class="opis_funkcjonalnosci"> Znajdź dodatkowe atrakcje, w pobliżu Twojego koncertu:</p>
-
-          <ul class="lista_funkcjonalnosci">
-
-            <li>Gastronomia</li>
-
-            <li>Atrakcje turystyczne</li>
-
-            <li>Nocleg</li>
-
-            <li>Dojazd</li>
-          </ul>
+      <form>
+        <div class="form-group">
+          <div class="col-xs-6 col-xs-offset-0">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"
+                       value="safety"
+                       checked
+                       disabled> Twój adres e-mail jest <a href="#popup1">bezpieczny</a>, nikomu go nie udostępnimy.
+              </label>
+            </div>
+          </div>
         </div>
-      </section>
 
-      <section class="styl_ramki_funkcjonalnosci">
-        <figure class="ikona_funkcjonalnosci">
-          <img src="obrazki/iconmusic3.svg"
-               alt="ikona3">
-        </figure>
+        <div id="popup1" class="overlay">
+          <div class="popup">
+            <h2>Polityka bezpieczeństwa</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+              Na podstawie przepisów prawnych zobowiązujemy się do bezpiecznego zarządzania powierzonymi przez Państwa
+              adresami e-mail oraz do nie udostępnianie ich osobom trzecim.
+            </div>
+          </div>
+        </div>
 
-        <h1>Kup kup kup!</h1>
+        <div class="form-group">
+          <div class="col-xs-6 col-xs-offset-0">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"
+                       value="spam"
+                       checked
+                       disabled> Wiadomość o premierze otrzymasz tylko jeden raz, nie spamujemy.
+              </label>
+            </div>
+          </div>
+        </div>
+      </form>
 
-        <p class="opis_funkcjonalnosci"> Lokalizacje gdzie możesz zakupić bilety na wygrane atrakcje</p>
-      </section>
+      <form>
+        <div class="form-group">
+          <div class="col-xs-12">
+            <label>
+              <input type="email"
+                     placeholder="Podaj e-mail"
+                     class="wpisz_email"
+                     required>
+            </label>
+          </div>
+        </div>
+      </form>
 
-      <section class="styl_ramki_funkcjonalnosci">
-        <figure class="ikona_funkcjonalnosci">
-          <img src="obrazki/iconmusic4.svg"
-               alt="ikona4">
-        </figure>
+      <div class="col-xs-12">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+          Wyślij
+        </button>
 
-        <h1>Zabierz innych!</h1>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <p class="opis_funkcjonalnosci">Stwórz swój plan wydarzenia i zaproś na niego swoich znajomych</p>
-      </section>
-    </section>
-  </div>
 
-  <div class="zapis"
-       id="zapis">
-    <h2 class="naglowek_formularza">Zapisz się do nas, a wyślemy Ci informację o premierze naszej aplikacji!!</h2>
 
-    <form class="formularz">
-      <div class="pola_emaila">
-        <input type="text"
-               placeholder="Imię"
-               required>
-
-        <input type="email"
-               placeholder="e-mail"
-               required>
       </div>
-    </form>
-
-    <div class="politka_bezpieczenstwa"> Nie martw się! Podany przez Ciebie mail jest bezpieczny z nami!</div>
-
-    <button class="button_od_maila">Wyślij</button>
-  </div>
+    </div>
+  </section>
 
   <div class="dlugi_opis"
-       id="dlugi_opis"></div>
+       id="dlugi_opis">
+  </div>
 </main>
 <!--  SEKCJA O NAS   -->
 <footer>
@@ -326,7 +398,7 @@
 
 <script src="./bootstrap/jquery.min.js"></script>
 <script src="./bootstrap/bootstrap.min.js"></script>
-
+<script src="./js/navigation.js"></script>
 </body>
 
 
