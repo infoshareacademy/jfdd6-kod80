@@ -24,15 +24,25 @@ var top_element_id= () => {
 	return 	sorted_visibleElements()[0];
 }
 
+var chose_focus_element = () => {
+	return sorted_visibleElements()[Math.floor(sorted_visibleElements().length / 2)];
+}
+
+var focus_element = () => {
+	const id = chose_focus_element();
+	const selector = createSelector(id);
+	dodajFocusStyle(selector);
+}
+
 
 $('.tu-bede-nawigowal').on('scrollSpy:enter', function() {
   console.log('enter:', $(this).attr('id'));
 
   var idOfVisibleElement = $(this).attr('id');
   var selector = createSelector(idOfVisibleElement);
-
-  dodajFocusStyle(selector);
   visibleElements.add(idOfVisibleElement);
+
+  focus_element();
 });
 
 $('.tu-bede-nawigowal').on('scrollSpy:exit', function() {
@@ -41,6 +51,8 @@ $('.tu-bede-nawigowal').on('scrollSpy:exit', function() {
   var idOfVisibleElement = $(this).attr('id');
   var selector = createSelector(idOfVisibleElement);
 	visibleElements.delete(idOfVisibleElement);
+
+	focus_element();
 
 
 });
