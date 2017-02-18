@@ -1,8 +1,7 @@
 /**
  * Created by pawelszymanski on 17.02.17.
  */
-
-
+	
 var nav_Ids = (selector) => {
 	return $(".tu-bede-nawigowal").toArray().map( (element) => { return $(element).attr("id") } )
 };
@@ -24,16 +23,14 @@ var top_element_id= () => {
 	return 	sorted_visibleElements()[0];
 }
 
-var chose_focus_element = () => {
+var chose_focus_middle_element_id = () => {
 	return sorted_visibleElements()[Math.floor(sorted_visibleElements().length / 2)];
 }
 
-var focus_element = () => {
-	const id = chose_focus_element();
+var focus_element = (id) => {
 	const selector = createSelector(id);
 	dodajFocusStyle(selector);
 }
-
 
 $('.tu-bede-nawigowal').on('scrollSpy:enter', function() {
   console.log('enter:', $(this).attr('id'));
@@ -42,7 +39,7 @@ $('.tu-bede-nawigowal').on('scrollSpy:enter', function() {
   var selector = createSelector(idOfVisibleElement);
   visibleElements.add(idOfVisibleElement);
 
-  focus_element();
+  focus_element( chose_focus_middle_element_id() );
 });
 
 $('.tu-bede-nawigowal').on('scrollSpy:exit', function() {
@@ -52,9 +49,11 @@ $('.tu-bede-nawigowal').on('scrollSpy:exit', function() {
   var selector = createSelector(idOfVisibleElement);
 	visibleElements.delete(idOfVisibleElement);
 
-	focus_element();
-
-
+	focus_element( top_element_id() );
 });
 
-$('.tu-bede-nawigowal').scrollSpy();
+$(document).scroll( () => {
+	$('.tu-bede-nawigowal').scrollSpy();
+} );
+
+focus_element(nav_Ids()[0]);
