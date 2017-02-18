@@ -172,11 +172,12 @@
           <div class="col-xs-6 col-xs-offset-0">
             <div class="checkbox">
                 <!--TU MUSI BYC WALIDACJA-->
-              <label>
+              <label class="labelZgoda">
                 <input name="zgoda1" id="zgoda1" type="checkbox"
                        value="safety"
-                       required>
-                  Twój adres e-mail jest <a href="#popup1">bezpieczny</a>, nikomu go nie udostępnimy.
+                       >
+                  Twój adres e-mail jest <a href="#popup1">bezpieczny</a>, nikomu go nie udostępnimy.  <br>
+                  Wiadomość o premierze otrzymasz tylko jeden raz, nie spamujemy.
               </label>
             </div>
           </div>
@@ -194,18 +195,18 @@
         </div>
 
 
-        <div class="form-group">
-          <div class="col-xs-6 col-xs-offset-0">
-            <div class="checkbox">
-                <!--TU MUSI BYC WALIDACJA-->
-              <label>
-                <input name="zgoda2" id="zgoda2" type="checkbox"
-                       value="spam" required>
-                  Wiadomość o premierze otrzymasz tylko jeden raz, nie spamujemy.
-              </label>
-            </div>
-          </div>
-        </div>
+        <!--<div class="form-group">-->
+          <!--<div class="col-xs-6 col-xs-offset-0">-->
+            <!--<div class="checkbox">-->
+                <!--&lt;!&ndash;TU MUSI BYC WALIDACJA&ndash;&gt;-->
+              <!--<label>-->
+                <!--<input name="zgoda2" id="zgoda2" type="checkbox"-->
+                       <!--value="spam" required>-->
+                  <!--Wiadomość o premierze otrzymasz tylko jeden raz, nie spamujemy.-->
+              <!--</label>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
           <!--TU MUSI BYC WALIDACJA-->
         <div class="form-group">
           <div class="col-xs-12">
@@ -224,10 +225,10 @@
         <button name="przyciskWyslij" type="button" onclick="ValidationEvent()" class="btn btn-success" data-toggle="modal" >
           Wyślij
             <div id="popup2" class="overlay">
-                <div class="popup">
-                    <a class="close" href="#">&times;</a>
+                <div class="popupDrugi">
+                    <a class="close" href="#">x</a>
                     <div class="content">
-                        A tu bedzie gra!
+                        A tu bedzie gra!  A tu bedzie gra!  A tu bedzie gra!  A tu bedzie gra!  A tu bedzie gra!  A tu bedzie gra!
                     </div>
                 </div>
             </div>

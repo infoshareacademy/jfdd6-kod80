@@ -92,6 +92,7 @@ input:required:invalid {
   transition: all 5s ease-in-out;
 }
 
+
 .popup h2 {
   margin-top: 0;
   color: #333;
@@ -119,11 +120,52 @@ input:required:invalid {
   color: black;
 }
 
+.popupDrugi {
+  margin: 20% auto auto auto;
+  padding: 20px;
+  background: $color_duzych_napisow;
+  border-radius: 5px;
+  width: 60%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popupDrugi .content {
+  max-height: 30%;
+  overflow: auto;
+  color: black;
+}
+
+.popupDrugi .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333; }
+
+.popupDrugi .close:hover {
+  color: red;
+}
+
+//TO JEST NOWA LINIJKA
+
+label .labelZgoda
+{
+  display: block;
+ text-align: center;
+}
+
 @media screen and (max-width: 767px) {
   .box {
     width: 70%;
   }
   .popup {
+    width: 70%;
+  }
+  .popupDrugi {
     width: 70%;
   }
 }
