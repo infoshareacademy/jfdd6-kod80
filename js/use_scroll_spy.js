@@ -47,13 +47,13 @@ $('.tu-bede-nawigowal').on('scrollSpy:exit', function() {
 
   var idOfVisibleElement = $(this).attr('id');
   var selector = createSelector(idOfVisibleElement);
-	visibleElements.delete(idOfVisibleElement);
-
-	focus_element( top_element_id() );
+  visibleElements.delete(idOfVisibleElement);
 });
 
+$('.tu-bede-nawigowal').scrollSpy();
+
 $(document).scroll( () => {
-	$('.tu-bede-nawigowal').scrollSpy();
+ focus_element( chose_focus_middle_element_id() );
 } );
 
 
