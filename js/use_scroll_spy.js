@@ -1,6 +1,12 @@
 /**
  * Created by pawelszymanski on 17.02.17.
  */
+
+
+var nav_Ids = (selector) => {
+	return $(".tu-bede-nawigowal").toArray().map( (element) => { return $(element).attr("id") } )
+};
+
 var dodajFocusStyle = (selector) => {
   $(selector).focus();
 }
