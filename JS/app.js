@@ -9,11 +9,9 @@ function ValidationEvent() {
     var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
 // Conditions
     if (!document.getElementById("zgoda1").checked) {
-        alert("1");
-    } else if (!document.getElementById("zgoda2").checked) {
-        alert("2");
+        alert("Zaznacza zapoznanie się ze zgodą dotyczącą przetwarzania adresu e-mail.");
     } else if (email == '' || !email.match(emailReg)) {
-        alert("3");
+        alert("Wprowadź poprawny adres e-mail.");
     } else {
         window.location.href = "#popup2";
     }
