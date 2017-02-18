@@ -1,3 +1,5 @@
+@import "colors";
+
 .o_nas {
   display: flex;
   flex-direction: row;
@@ -159,4 +161,15 @@
       transform: scale(1);
     }
   }
+}
+
+.pasekDolny {
+  color: white;
+  text-align: right;
+  padding: 10px 15px 20px 0;
+  margin-right: 100px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: $color_ciemnosci;
+  height: 40px;
 }
