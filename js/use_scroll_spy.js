@@ -56,6 +56,13 @@ $(document).scroll( () => {
 	$('.tu-bede-nawigowal').scrollSpy();
 } );
 
+
+$(window).scroll(function() {
+   if($(window).scrollTop()  == 0) {
+ 		focus_element( top_element_id() );
+   }
+});
+
 $(window).scroll(function() {
    if($(window).scrollTop() + $(window).height() == $(document).height()) {
        let ids = nav_Ids();
