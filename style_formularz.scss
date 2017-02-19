@@ -154,8 +154,10 @@ input:required:invalid {
 
 label .labelZgoda
 {
-  display: block;
- text-align: center;
+  text-align: center;
+}
+.naglowek-druga-czesc {
+  font-size: 14px;
 }
 
 @media screen and (max-width: 767px) {
