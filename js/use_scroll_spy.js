@@ -50,7 +50,7 @@ var focus_element = (id) => {
 */
 
 $('.tu-bede-nawigowal').on('scrollSpy:enter', function() {
-  console.log('enter:', $(this).attr('id'));
+  // console.log('enter:', $(this).attr('id'));
 
   var idOfVisibleElement = $(this).attr('id');
   var selector = createSelector(idOfVisibleElement);
@@ -60,7 +60,7 @@ $('.tu-bede-nawigowal').on('scrollSpy:enter', function() {
 });
 
 $('.tu-bede-nawigowal').on('scrollSpy:exit', function() {
-  console.log('exit:', $(this).attr('id'));
+  // console.log('exit:', $(this).attr('id'));
 
   var idOfVisibleElement = $(this).attr('id');
   var selector = createSelector(idOfVisibleElement);
@@ -79,6 +79,25 @@ var startSpying = () => {
     isSpying = true;  }
 };
 
+//do wykrywania czy kliknieto link w nawigacji
+let isClick = false;
+ var clickedElement_id 
+
+$("#navbar a").click( function() {
+  isClick = true;
+  clickedElement_id = $(this).attr("id");
+})
+
+
+
+//wywołaj funkcje gdy scroll zattrzymal sie
+$.fn.scrollStopped = function(callback) {
+  var that = this, $this = $(that);
+  $this.scroll(function(ev) {
+    clearTimeout($this.data('scrollTimeout'));
+    $this.data('scrollTimeout', setTimeout(callback.bind(that), 250, ev));
+  });
+};
 
 //Uruchom scroll Spy przy pierwszym ruchy scrolla
 //
@@ -86,7 +105,16 @@ $(document).scroll( () => {
   startSpying();
 
 //wybierz element do focus
- focus_element( middle_element_id() );
+  focus_element( middle_element_id() );
+
+//Gdy zatrzyma sie scroll sprawdz czy przedtem kliknieto link
+// jesli kliknieto link dodaj focus w odpowiednim miejscu
+$(window).scrollStopped(function(ev){
+  if (isClick == true) {
+    dodajFocusStyle( "#" +clickedElement_id );
+    isClick = false;
+  }
+});
 
  //rozpoznaj czy jestesm na gorze ekranu i zaznacz pierwszy element nawigacji
   if($(window).scrollTop()  == 0) {
@@ -95,7 +123,6 @@ $(document).scroll( () => {
 
 //rozpoznaj czy jestesm na dole ekranu i zaznacz dolny element nawigacji
   if($(window).scrollTop() + $(window).height() == $(document).height()) {
-       let ids = nav_Ids();
        focus_element( bottom_element_id() );
    }
 });
