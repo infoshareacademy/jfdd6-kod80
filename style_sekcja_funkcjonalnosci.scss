@@ -1,0 +1,124 @@
+//Sprawdzić stary plik style-funkcjonalnosci czy nikt z niego nic nie uzywa i wywalic, bo sie naglada kolor tła calej sekcji i elementu p z opisem funkcji
+//stary plik: style-funkcjonalnosci
+//nowy plik STYLE SEKCJA FUNKCJONALNOSCI!!!
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato&subset=latin-ext');
+
+.funkcje_aplikacji {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+
+
+
+.funkcjonalnosc {
+  width: 220px;
+  box-shadow: 0 0 15px #414141;
+  border: 1px solid #414141;
+  background-image: url('ikony_funkcjonalnosc/background_funkcjonalnosci_edit2.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 bottom;
+  background-color: white;
+
+
+  &.funkcjonalnosc_znajdz_koncert {
+    background-position: 0 bottom;
+  }
+  &.funkcjonalnosc_znajdz_atrakcje {
+    background-position: -220px bottom;
+  }
+  &.funkcjonalnosc_znajdz_bilet {
+    background-position: -440px bottom;
+  }
+  &.funkcjonalnosc_poinformuj_innych {
+    background-position: -660px bottom;
+  }
+
+
+  .kontener {
+    width: 100%;
+
+    .ikona {
+      height: 70px;
+      width: 70px;
+      background-color: #e21201;
+      border-radius: 50%;
+      box-shadow: 0 0 12px 2px #fafafa;
+      margin: 20px auto;
+      padding: 5% 0;
+      text-align: center;
+      background-image: none;
+      background-size: auto 55%;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+
+      &.ikona_koncert {
+        background-image: url('ikony_funkcjonalnosc/koncert.png');
+      }
+
+      &.ikona_atrakcje {
+        background-image: url('ikony_funkcjonalnosc/atrakcje.png');
+      }
+
+      &.ikona_bilet {
+        background-image: url('ikony_funkcjonalnosc/ticket.png');
+      }
+
+      &.ikona_poinformuj {
+        background-image: url('ikony_funkcjonalnosc/share_with_friends.png');
+      }
+    }
+
+    .naglowek {
+      margin: 0;
+      padding: 3%;
+      color: #e21201;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'Lato', sans-serif;
+      font-size: 1.5rem;
+
+
+    }
+    .opis {
+      position: relative;
+      padding: 5% 10%;
+      font-family: 'Lato', sans-serif;
+      font-size: 1.5rem;
+      text-align: center;
+      background-color: transparent;
+      // kolor tła wyrzucic po usunieciu pliku starego ze stylami funkcjonalnosci
+
+      &::before {
+        position: absolute;
+        top: 0;
+        content: "";
+        opacity: 0;
+        border: 0.5px solid white;
+        width: 80%;
+        transform: translate3d(-65%, 0, 0) scale(0);
+        transition: all 0.5s linear;
+      }
+    }
+
+    &:hover {
+      .opis::before {
+        position: absolute;
+        top: 0;
+        right: 10%;
+        content: "";
+        opacity: 1;
+        border: 0.5px solid #ff1401;
+        width: 80%;
+        background-color: white;
+        transform: translate3d(0, 0, 0) scale(1);
+        transition: all 0.5s linear;
+      }
+    }
+
+  }
+}
