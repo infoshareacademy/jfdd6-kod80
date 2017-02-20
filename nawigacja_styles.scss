@@ -7,6 +7,7 @@
   padding: 4px 0;
   position: fixed;
   width: 100%;
+  z-index: 999;
 }
 
 .navbar-brand img {
@@ -38,12 +39,6 @@
   .navbar-brand, .navbar-nav>li>a {
     color: $color_tekst_menu;
   }
-  .navbar-nav > li > a:visited {
-    color: $color_tekst_menu_active_focus;
-    border: dotted;
-    border-width: 1px;
-    margin: 3px;
-  }
 
   .navbar-nav > li > a:active {
     color: $color_tekst_menu_active_focus;
@@ -55,6 +50,7 @@
   .navbar-nav > li > a:focus {
     color: $color_tekst_menu_active_focus;
     border: dotted;
+    border-color: $color_tekst_menu_active_focus;
     border-width: 1px;
     margin: 3px;
   }
