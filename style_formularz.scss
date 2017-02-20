@@ -1,0 +1,130 @@
+@import "colors";
+
+.zapis {
+  background-color: #423137;
+  text-align: center;
+  color: $text-color;
+  padding: 10px;
+}
+
+.naglowek_formularza {
+  margin: 0;
+  padding: 20px 0 20px 0;
+  text-shadow: 4px 4px 2px $background-color;
+}
+
+.opis_wiadomosci {
+  text-shadow: 4px 4px 2px $background-color;
+  font-size: 20px;
+}
+
+.button,
+input,
+optgroup,
+select,
+textarea {
+  color: $background-color;
+}
+
+.formularz {
+  padding: 20px;
+}
+
+.wpisz_email {
+  font-size: 20px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.button_od_maila {
+  margin: 10px 0 0 0;
+  padding: 10px;
+  color: $background-color;
+}
+
+//form:invalid {
+//  border: 5px solid #ff1a1f;
+//}
+//
+//form:valid {
+//  border: 5px solid #1dff0b;
+//}
+
+input:invalid {
+  background-color: #ffffff;
+}
+
+input:required {
+  border-color: $color_logo;
+  border-width: 5px;
+}
+
+input:required:invalid {
+  border-color: $color_tekst_menu_hover;
+}
+
+// ========== pop up ============================
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 20% auto auto auto;
+  padding: 20px;
+  background: $color_duzych_napisow;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .close:hover {
+  color: red;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  color: black;
+}
+
+@media screen and (max-width: 767px) {
+  .box {
+    width: 70%;
+  }
+  .popup {
+    width: 70%;
+  }
+}
+// ========== pop up ============================
