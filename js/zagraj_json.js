@@ -13,8 +13,8 @@ var zagraj = (nazwa_nuty, time, duration) => {
   console.log(time);
   console.log(duration);
 }
-var playTrack = (track) => {
 
+var playTrack = (track) => {
   if (track.notes !== void 0) {
     track.notes.forEach( (note) => {
     const nazwa_nuty = note.name;
@@ -24,22 +24,12 @@ var playTrack = (track) => {
     zagraj(nazwa_nuty, time, duration);
     });
   }
-
-
-  // track.forEach( (note) => {
-
-  // });
 };
 
+var playMusic = (music) => {
+  music.tracks.forEach((track) => {
+    playTrack(track);
+  });
+};
 
-castles_music.tracks.forEach( (track) => {
-  // console.log(track);
-  playTrack( track );
-
-});
-
-
-
-// castles_music.tracks[1].notes.forEach( (note) => {
-//
-// });
+playMusic(castles_music);
