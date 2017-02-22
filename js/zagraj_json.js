@@ -2,7 +2,7 @@
 //  * Created by pawelszymanski on 21.02.17.
 //  */
 
-var music = castles_music;
+var music = ode_to_joy;
 
 
 /*****************
@@ -56,4 +56,4 @@ var playMusic = (music, callback_play_note) => {
 * @param - plik JSON z muzyka, callback grajacy nute
  */
 
-playMusic(castles_music, show_note_in_console);
+playMusic(music, show_note_in_console);
