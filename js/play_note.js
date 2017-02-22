@@ -17,21 +17,36 @@
 // }
 
 
+
+
 function dodajKolor(note_id, duration ) {
-  setInterval(function () {
-    document.querySelectorAll('.set li').forEach(function (element) {
-      element.classList.remove('correct-key');
-    });
+  // setInterval(function () {
+  //   document.querySelectorAll('.set li').forEach(function (element) {
+  //     element.classList.remove('correct-key');
+  //   });
+  //
+  //   document.querySelectorAll('.set li')[Math.floor(Math.random() * 12)].classList.add('correct-key');
+  // }, 1000);
+  //
+  // document.querySelectorAll('.set li').forEach(function (element) {
+  //   console.log(element);
+  //   element.addEventListener('click', function () {
+  //     element.classList.add('onclick-color-white');
+  //   })
+  // });
 
-    document.querySelectorAll('.set li')[Math.floor(Math.random() * 12)].classList.add('correct-key');
-  }, 1000);
+  const stala_czas_podswietlania = duration*1000;
 
-  document.querySelectorAll('.set li').forEach(function (element) {
-    console.log(element);
-    element.addEventListener('click', function () {
-      element.classList.add('onclick-color-white');
-    })
-  });
+  console.log(stala_czas_podswietlania);
+
+  var $element = $("#"+note_id);
+
+  $element.addClass('correct-key');
+  setTimeout(function () {
+    $element.removeClass('correct-key');
+  }, stala_czas_podswietlania);
+  console.log(note_id);
+
 }
 
 function grajNute(nazwa_nuty, duration) {
