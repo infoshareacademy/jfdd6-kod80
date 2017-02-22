@@ -4,6 +4,10 @@
 
 var music = castles_music;
 
+
+/*****************
+ * Obsluga funkcji
+ */
 var show_note_in_console = (nazwa_nuty, duration) => {
   console.log(nazwa_nuty, duration);
 }
@@ -44,7 +48,12 @@ var playMusic = (music, callback_play_note) => {
     playTrack(track, callback_play_note);
   });
 };
+/******************************************************************/
 
-// Graj muzyko - uzyj odpowiedniej funkcji do grania nuty
-// @param - plik JSON z muzyka, callback grajacy nute
+
+/*
+* Graj muzyko - uzyj odpowiedniej funkcji do grania nuty
+* @param - plik JSON z muzyka, callback grajacy nute
+ */
+
 playMusic(castles_music, show_note_in_console);
