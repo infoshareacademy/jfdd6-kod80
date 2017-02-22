@@ -2,12 +2,17 @@
 //  * Created by pawelszymanski on 21.02.17.
 //  */
 
+//castles_music
+//ode_to_joy
+
 var music = ode_to_joy;
 
 
 /*****************
  * Obsluga funkcji
  */
+
+
 var show_note_in_console = (nazwa_nuty, duration) => {
   console.log(nazwa_nuty, duration);
 }
@@ -55,5 +60,6 @@ var playMusic = (music, callback_play_note) => {
 * Graj muzyko - uzyj odpowiedniej funkcji do grania nuty
 * @param - plik JSON z muzyka, callback grajacy nute
  */
-
-playMusic(music, show_note_in_console);
+// grajNute
+// show_note_in_console
+playMusic(music, grajNute);
