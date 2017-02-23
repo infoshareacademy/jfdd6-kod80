@@ -12,7 +12,7 @@ function playNote(note, duration) {
     const czasGrania = duration * 1000;
 
     setTimeout(function () {
-        audio.Stop();
+        audio.pause();
     }, czasGrania);
   }
 }
@@ -36,5 +36,5 @@ function dodajKolor(note_id, duration ) {
 
 function grajNute(nazwa_nuty, duration) {
   dodajKolor(nazwa_nuty, duration);
-  playNote(  nazwa_nuty.toLowerCase() );
+  playNote(  nazwa_nuty.toLowerCase(), duration );
 }
