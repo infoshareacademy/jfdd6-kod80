@@ -68,9 +68,29 @@ var songs_db = [
   data: ode_to_joy
   },
   {
-   name: "Asturia",
-    data: asturia
+    name: "Dancing Bear",
+    data: dancing_bear
+  },
+  {
+    name: "Old MacDonald",
+    data: old_macdonald
+  },{
+    name: "Auclaire",
+    data: auclaire
+  },
+  {
+    name: "Row the Boat Ashore",
+    data: row_the_boat
+  }, {
+    name: "Daisy",
+    data: daisy
+  }, {
+    name: "L'aviron",
+    data: aviron
   }
+
+
+
 ];
 
 // dodaj klawisze z piosenkami
