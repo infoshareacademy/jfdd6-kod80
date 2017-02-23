@@ -33,9 +33,14 @@
   width: 220px;
   height: 300px;
   background-color: #ffffff;
-  box-shadow: 3px 3px 8px #692121;
-  transform: scale(1);
+  box-shadow: 0 0 12px #888888;
+  //transform: scale(1);
   transition: all 1s ease;
+
+  &.marek {
+    background-image: url('obrazki/team-photo/marek.jpg');
+
+  }
 
   .pierwszy_div {
     width: 100%;
@@ -115,8 +120,12 @@
 
   &:hover {
     background-color: #ffffff;
-    transform: scale(0.9);
+    //transform: scale(0.9);
     filter: brightness(0.7);
+
+    &.marek {
+      background-image: url('obrazki/team-photo/marek-sluchawki.jpg');
+    }
 
     .name {
       opacity: 0;
