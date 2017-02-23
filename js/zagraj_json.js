@@ -4,9 +4,7 @@
 
 //castles_music
 //ode_to_joy
-
-var music = ode_to_joy;
-
+//asturia
 
 /*****************
  * Obsluga funkcji
@@ -64,10 +62,16 @@ var playMusic = (music, callback_play_note) => {
 // show_note_in_console
 
 
-var songs_db = [{
+var songs_db = [
+  {
   name: "Oda do radości",
   data: ode_to_joy
-}];
+  },
+  {
+   name: "Asturia",
+    data: asturia
+  }
+];
 
 // dodaj klawisze z piosenkami
 $(".buttons-table").append(
