@@ -17,18 +17,18 @@
 
 
 <ul class="set">
-    <li id="white-b" data-note="b4" class="white b"></li>
+    <li id="white-b" data-note="b4" data-key="90" class="white b"><span class="key-name"><strong>B</strong></span></li>
     <li id="black-as" data-note="h4" class="black as"></li>
-    <li id="white-a" data-note="a4" class="white a"></li>
+    <li id="white-a" data-note="a4" class="white a"><span class="key-name"><strong>A</strong></span></li>
     <li id="black-gs" data-note="gis4" class="black gs"></li>
-    <li id="white-g" data-note="g4" class="white g"></li>
+    <li id="white-g" data-note="g4" class="white g"><span class="key-name"><strong>G</strong></span></li>
     <li id="black-fs" data-note="fis4" class="black fs"></li>
-    <li id="white-f" data-note="f4" class="white f"></li>
-    <li id="white-e" data-note="e4" class="white e"></li>
+    <li id="white-f" data-note="f4" class="white f"><span class="key-name"><strong>F</strong></span></li>
+    <li id="white-e" data-note="e4" class="white e"><span class="key-name"><strong>E</strong></span></li>
     <li id="black-ds" data-note="es4" class="black ds"></li>
-    <li id="white-d" data-note="d4" class="white d"></li>
+    <li id="white-d" data-note="d4" class="white d"><span class="key-name"><strong>D</strong></span></li>
     <li id="black-cs" data-note="cis4" class="black cs"></li>
-    <li id="white-c" data-note="c4" class="white c"></li>
+    <li id="white-c" data-note="c4" class="white c"><span class="key-name"><strong>C</strong></span></li>
 </ul>
 
 
@@ -38,7 +38,18 @@
 <script src="./music/castles.js"></script>
 <script src="./music/ode.js"></script>
 <script src="./js/play_note.js"></script>
-<script src="./js/zagraj_json.js"></script>
+<!--<script src="./js/zagraj_json.js"></script>-->
+
+<script>
+
+  $(document).keyup(function(event) {
+    grajNute( $('li[data-key='+event.keyCode+']').attr('data-note') , 1);
+  })
+
+console.log($(document).keyup(function(event) {vent.keyCode)
+
+</script>
+
 </body>
 
 </html>
