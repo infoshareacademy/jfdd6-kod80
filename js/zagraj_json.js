@@ -62,4 +62,20 @@ var playMusic = (music, callback_play_note) => {
  */
 // grajNute
 // show_note_in_console
-playMusic(music, grajNute);
+
+
+var songs_db = [{
+  name: "Oda do radości",
+  data: ode_to_joy
+}];
+
+// dodaj klawisze z piosenkami
+$(".buttons-table").append(
+  songs_db.map( function (song) {
+    console.log(song);
+    console.log(song.data);
+    return $('<button>').text(song.name).addClass('btn btn-default').click( function () {
+      playMusic(song.data, grajNute);
+    });
+  })
+);
