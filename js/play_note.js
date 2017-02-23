@@ -2,22 +2,14 @@
  * Created by pawelszymanski on 22.02.17.
  */
 
-// function playNote(nuta) {
-//
-//   switch(nuta) {
-//     case 'white-b':
-//       var audio = new Audio('white-b.mp3');
-//       break;
-//     case '"white-a'
-//       var audio = new Audio('white-a.mp3');
-//       break;
-//
-//       audio.play();
-//   }
-// }
+function playNote(note) {
+  var audio = new Audio('keyboard/'+note+'.mp3');
+  audio.play();
+}
 
-
-
+$('ul.set li').on('click',function () {
+  playNote($(this).attr('data-note'));
+});
 
 function dodajKolor(note_id, duration ) {
   // setInterval(function () {
@@ -39,7 +31,7 @@ function dodajKolor(note_id, duration ) {
 
   console.log(stala_czas_podswietlania);
 
-  var $element = $("#"+note_id);
+  var $element = $(" li[data-note="+note_id.toLowerCase()+"]");
 
   $element.addClass('correct-key');
   setTimeout(function () {
@@ -49,6 +41,11 @@ function dodajKolor(note_id, duration ) {
 
 }
 
+// function () {
+//
+// }
+
 function grajNute(nazwa_nuty, duration) {
   dodajKolor(nazwa_nuty, duration);
+  playNote(  nazwa_nuty.toLowerCase() );
 }
