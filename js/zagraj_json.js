@@ -87,6 +87,10 @@ var songs_db = [
   }, {
     name: "L'aviron",
     data: aviron
+  },
+  {
+    name: "Nothing else matters",
+    data: nothing_else_matters
   }
 
 
