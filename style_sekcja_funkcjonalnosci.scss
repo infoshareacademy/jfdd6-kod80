@@ -1,21 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&subset=latin-ext');
-
 .funkcje_aplikacji {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin: 50px 0;
-
   .funkcjonalnosc {
     margin: 0 10px;
     width: 220px;
-    box-shadow: 0 0 15px #d8d8d8;
-    border: 1px solid #f0e2d9;
+    box-shadow: 0 0 15px #ab9e9e;
+    border: 1px solid #c3b9b2;
     background-image: url('ikony_funkcjonalnosc/background_funkcjonalnosci_edit2.jpg');
     background-repeat: no-repeat;
     background-position: 0 bottom;
     background-color: white;
-
     &.funkcjonalnosc_znajdz_koncert {
       background-position: 0 bottom;
     }
@@ -28,7 +25,6 @@
     &.funkcjonalnosc_poinformuj_innych {
       background-position: -660px bottom;
     }
-
     &:hover > .kontener {
       .opis::before {
         position: absolute;
@@ -43,10 +39,8 @@
         transition: all 0.5s linear;
       }
     }
-
     .kontener {
       width: 100%;
-
       .ikona {
         height: 70px;
         width: 70px;
@@ -60,24 +54,19 @@
         background-size: auto 55%;
         background-repeat: no-repeat;
         background-position: center center;
-
         &.ikona_koncert {
           background-image: url('ikony_funkcjonalnosc/koncert.png');
         }
-
         &.ikona_atrakcje {
           background-image: url('ikony_funkcjonalnosc/atrakcje.png');
         }
-
         &.ikona_bilet {
           background-image: url('ikony_funkcjonalnosc/ticket.png');
         }
-
         &.ikona_poinformuj {
           background-image: url('ikony_funkcjonalnosc/share_with_friends.png');
         }
       }
-
       .naglowek {
         margin: 0;
         padding: 3%;
@@ -87,7 +76,6 @@
         font-family: 'Lato', sans-serif;
         font-size: 1.5rem;
       }
-
       .opis {
         position: relative;
         padding: 5% 10%;
@@ -97,7 +85,6 @@
         text-align: center;
         background-color: transparent;
         // kolor tła wyrzucic po usunieciu pliku starego ze stylami funkcjonalnosci
-
         &::before {
           position: absolute;
           top: 0;
