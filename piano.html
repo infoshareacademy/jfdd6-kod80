@@ -2,35 +2,134 @@
 <html lang="pl">
 <body>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+        <!--integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+  <link rel="stylesheet" href="pianoo.css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="pianoo.css">
-
-    <title>SoundTrip</title>
+  <title>SoundTrip</title>
 </head>
+
+<h1>Wlazł kotek na płotek</h1>
+<h2>NUTY: G,E,E,F,D,D,C,E,G,G,E,E,F,D,D,C,E,C</h2>
+<h2>klawisze na klawiaturze: s,l,l,a,k,k,j,l,s,s,l,l,a,k,k,j,l,j</h2>
 
 
 <ul class="set">
-    <li id="white-b" data-note="b4" class="white b"></li>
-    <li id="black-as" data-note="h4" class="black as"></li>
-    <li id="white-a" data-note="a4" class="white a"></li>
-    <li id="black-gs" data-note="gis4" class="black gs"></li>
-    <li id="white-g" data-note="g4" class="white g"></li>
-    <li id="black-fs" data-note="fis4" class="black fs"></li>
-    <li id="white-f" data-note="f4" class="white f"></li>
-    <li id="white-e" data-note="e4" class="white e"></li>
-    <li id="black-ds" data-note="es4" class="black ds"></li>
-    <li id="white-d" data-note="d4" class="white d"></li>
-    <li id="black-cs" data-note="cis4" class="black cs"></li>
-    <li id="white-c" data-note="c4" class="white c"></li>
+  <li id="white-b" data-note="f4" data-key='65' class="white b">
+    <span class="note-name"><strong>F</strong></span>
+    <span class="key-name"><strong>a</strong></span>
+  </li>
+  <li id="black-as" data-note="fis4" data-key='87' class="black as">
+    <span class="note-name-black"><strong>F#</strong></span>
+    <span class="key-name-black"><strong>w</strong></span>
+  </li>
+  <li id="white-a" data-note="g4" data-key='83' class="white a">
+    <span class="note-name"><strong>G</strong></span>
+    <span class="key-name"><strong>s</strong></span>
+  </li>
+  <li id="black-gs" data-note="gis4" data-key='69' class="black gs">
+    <span
+      class="note-name-black"><strong>G#</strong></span>
+    <span class="key-name-black"><strong>e</strong></span>
+  </li>
+  <li id="white-g" data-note="a4" data-key='68' class="white g">
+    <span class="note-name"><strong>A</strong></span>
+    <span class="key-name"><strong>d</strong></span>
+  </li>
+  <li id="black-fs" data-note="h4" data-key='82' class="black fs">
+    <span
+      class="note-name-black"><strong>A#</strong></span>
+    <span class="key-name-black"><strong>r</strong></span>
+  </li>
+  <li id="white-f" data-note="b4" data-key='70' class="white f">
+    <span class="note-name"><strong>B</strong></span>
+    <span class="key-name"><strong>f</strong></span>
+  </li>
+  <li id="white-e" data-note="c4" data-key='74' class="white e">
+    <span class="note-name"><strong>C</strong></span>
+    <span class="key-name"><strong>j</strong></span>
+  </li>
+  <li id="black-ds" data-note="cis4" data-key='85' class="black ds">
+    <span
+      class="note-name-black"><strong>C#</strong></span>
+    <span class="key-name-black"><strong>u</strong></span>
+  </li>
+  <li id="white-d" data-note="d4" data-key='75' class="white d">
+    <span class="note-name"><strong>D</strong></span>
+    <span class="key-name"><strong>k</strong></span>
+  </li>
+  <li id="black-cs" data-note="es4" data-key='73' class="black cs">
+    <span
+      class="note-name-black"><strong>D#</strong></span>
+    <span class="key-name-black"><strong>i</strong></span>
+  </li>
+  <li id="white-c" data-note="e4" data-key='76' class="white c">
+    <span class="note-name"><strong>E</strong></span>
+    <span class="key-name"><strong>l</strong></span>
+  </li>
 </ul>
 
+<!--==== wczesniejsze ustawieni mp3 - nie pokrywajace sie z nutami na pianinie ===== -->
+<!--<ul class="set">-->
+  <!--<li id="white-b" data-note="b4" data-key='65' class="white b">-->
+    <!--<span class="note-name"><strong>F</strong></span>-->
+    <!--<span class="key-name"><strong>a</strong></span>-->
+  <!--</li>-->
+  <!--<li id="black-as" data-note="h4" data-key='87' class="black as">-->
+    <!--<span class="note-name-black"><strong>F#</strong></span>-->
+    <!--<span class="key-name-black"><strong>w</strong></span>-->
+  <!--</li>-->
+  <!--<li id="white-a" data-note="a4" data-key='83' class="white a">-->
+    <!--<span class="note-name"><strong>G</strong></span>-->
+    <!--<span class="key-name"><strong>s</strong></span>-->
+  <!--</li>-->
+  <!--<li id="black-gs" data-note="gis4" data-key='69' class="black gs">-->
+    <!--<span-->
+      <!--class="note-name-black"><strong>G#</strong></span>-->
+    <!--<span class="key-name-black"><strong>e</strong></span>-->
+  <!--</li>-->
+  <!--<li id="white-g" data-note="g4" data-key='68' class="white g">-->
+    <!--<span class="note-name"><strong>A</strong></span>-->
+    <!--<span class="key-name"><strong>d</strong></span>-->
+  <!--</li>-->
+  <!--<li id="black-fs" data-note="fis4" data-key='82' class="black fs">-->
+    <!--<span-->
+      <!--class="note-name-black"><strong>A#</strong></span>-->
+    <!--<span class="key-name-black"><strong>r</strong></span>-->
+  <!--</li>-->
+  <!--<li id="white-f" data-note="f4" data-key='70' class="white f">-->
+    <!--<span class="note-name"><strong>B</strong></span>-->
+    <!--<span class="key-name"><strong>f</strong></span>-->
+  <!--</li>-->
+  <!--<li id="white-e" data-note="e4" data-key='74' class="white e">-->
+    <!--<span class="note-name"><strong>C</strong></span>-->
+    <!--<span class="key-name"><strong>j</strong></span>-->
+  <!--</li>-->
+  <!--<li id="black-ds" data-note="es4" data-key='85' class="black ds">-->
+    <!--<span-->
+      <!--class="note-name-black"><strong>C#</strong></span>-->
+    <!--<span class="key-name-black"><strong>u</strong></span>-->
+  <!--</li>-->
+  <!--<li id="white-d" data-note="d4" data-key='75' class="white d">-->
+    <!--<span class="note-name"><strong>D</strong></span>-->
+    <!--<span class="key-name"><strong>k</strong></span>-->
+  <!--</li>-->
+  <!--<li id="black-cs" data-note="cis4" data-key='73' class="black cs">-->
+    <!--<span-->
+      <!--class="note-name-black"><strong>D#</strong></span>-->
+    <!--<span class="key-name-black"><strong>i</strong></span>-->
+  <!--</li>-->
+  <!--<li id="white-c" data-note="c4" data-key='76' class="white c">-->
+    <!--<span class="note-name"><strong>E</strong></span>-->
+    <!--<span class="key-name"><strong>l</strong></span>-->
+  <!--</li>-->
+<!--</ul>-->
+<!--==== wczesniejsze ustawieni mp3 - nie pokrywajace sie z nutami na pianinie ===== -->
 
 <script src="./bootstrap/jquery.min.js"></script>
 <script src="./bootstrap/bootstrap.min.js"></script>
@@ -38,7 +137,25 @@
 <script src="./music/castles.js"></script>
 <script src="./music/ode.js"></script>
 <script src="./js/play_note.js"></script>
-<script src="./js/zagraj_json.js"></script>
+<!--<script src="./js/zagraj_json.js"></script>-->
+
+<script>
+
+  $(document).keyup(function (event) {
+    grajNute(
+      $('li[data-key=' + event.keyCode + ']').attr('data-note'), 1);
+  });
+
+  //    document.addEventListener("keydown", function (event) {
+  //      console.log(event.keyCode);
+  //    });
+  //
+  //    $(document).keyup(function (event) {
+  //      console.log(event.keyCode)
+  //    });
+
+</script>
+
 </body>
 
 </html>
