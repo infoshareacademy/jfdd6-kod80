@@ -26,6 +26,10 @@ notesTable.push = function(note) {
   this.table.push( note );
 }
 
+notesTable.clear = function() {
+  this.table = [];
+}
+
 notesTable.stopMusic = function() {
   this.table.forEach( (audio) => audio.pause() );
 };
