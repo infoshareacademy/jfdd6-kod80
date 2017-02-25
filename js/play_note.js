@@ -18,22 +18,6 @@ function noteIdentity(note) {
   }
 }
 
-var notesTable ={
-  table: []
-};
-
-notesTable.push = function(note) {
-  this.table.push( note );
-}
-
-notesTable.clear = function() {
-  this.table = [];
-}
-
-notesTable.stopMusic = function() {
-  this.table.forEach( (audio) => audio.pause() );
-};
-
 function playNote(note, duration) {
   var audio = new Audio('keyboard/'+note+'.mp3');
   if (duration == void 0 || isNaN(duration)) {
