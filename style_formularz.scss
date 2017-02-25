@@ -1,21 +1,27 @@
 @import "colors";
 
+#podajMaila:required {
+
+  border-color: white;
+}
+
 .zapis {
   background-color: #423137;
   text-align: center;
-  color: $text-color;
+  color: floralwhite;
   padding: 10px;
 }
 
 .naglowek_formularza {
   margin: 0;
   padding: 20px 0 20px 0;
-  text-shadow: 4px 4px 2px $background-color;
+  text-shadow: 1.5px 1.5px 1px $background-color;
 }
 
 .opis_wiadomosci {
-  text-shadow: 4px 4px 2px $background-color;
   font-size: 20px;
+  color: $color_logo;
+  text-shadow: none ;
 }
 
 .button,
@@ -41,14 +47,6 @@ textarea {
   padding: 10px;
   color: $background-color;
 }
-
-//form:invalid {
-//  border: 5px solid #ff1a1f;
-//}
-//
-//form:valid {
-//  border: 5px solid #1dff0b;
-//}
 
 input:invalid {
   background-color: #ffffff;
@@ -172,6 +170,9 @@ label .labelZgoda
   }
 }
 
+//STYLE ALERT BOXOW ------------------
+
+
 #alert-background {
   display: none;
   width: 100%;
@@ -192,26 +193,26 @@ label .labelZgoda
   background-color: #7c7d7e;
 }
 
-#alert-header{
-  background-color: #6d84b4;
+
+
+.alert-header{
+  background-color: $background-color;
   color: white;
   font-size: 20px;
   padding: 10px;
   margin: 10px 10px 0px 10px;
 }
 
-#alert-footer{
+.alert-footer{
 background-color: #f2f2f2;
-  text-align: right;
+  text-align: center;
   padding: 10px;
   margin: 0px 10px 10px 10px;
 }
 
-#alert-footer button{
-  background-color: #6d84b4;
+.alert-footer button{
+  background-color: $background-color;
   color: white;
-  padding: 5px;
+  padding: 10px 40px ;
   border: 0px;
 }
-
-// ========== pop up ==========================

@@ -57,19 +57,17 @@
 .obramowanie-przycisku {
   display: flex;
   justify-content: center;
-
   margin-top: 2.5em;
 }
 
 .przycisk-zapisz-sie {
   font-size: $big_font_size*0.18;
-  height: 6vh;
   padding: 0;
   box-sizing: border-box;
   width: 14vw;
   border: none;
-  color: $color_duzych_napisow;
-  background-color: transparentize($color_ozdob, 0.18);
+  color: whitesmoke;
+  background-color: transparentize(#e21201, 0.18);
   margin-bottom: 2em;
   &:hover {
     border: double;

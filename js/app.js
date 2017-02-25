@@ -15,19 +15,19 @@ function ValidationEvent() {
 
   if (!document.getElementById("zgoda1").checked) {
 
-
       showAlert();
+      document.getElementById("textBox").innerHTML = "Nie zaznaczono zgody.";
 
 
   } else if (email == '' || !email.match(emailReg)) {
-      customAlert();
+
+      showAlert();
+      document.getElementById("textBox").innerHTML = "Wprowadź poprawny adres e-mail.";
 
   } else {
     window.location.href = "#popup2";
   }
 }
-
-
 
 
 function alertCheckbox () {

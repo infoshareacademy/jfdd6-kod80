@@ -154,22 +154,19 @@
   <section class="zapis tu-bede-nawigowal"
            id="zapis">
     <div class="container">
-      <h2 class="naglowek_formularza">Nie chcesz przegapic premiery aplikacji SoundTrip?</h2>
+      <h2 class="naglowek_formularza">Nie chcesz przegapić premiery aplikacji SoundTrip?</h2>
 
-      <label class="opis_wiadomosci control-label col-xs-6 col-xs-offset-3">Wystarczy, ze zostawisz swoj e-mail...
-          <p class="naglowek-druga-czesc">
-      <br> Myślisz - nie ma nic za darmo? Też tak pomyśleliśmy! Przekonaj się sam! </p> </label>
+      <label class="opis_wiadomosci control-label col-xs-6 col-xs-offset-3">Wystarczy, że zostawisz nam swój adres e-mail.</label>
 
       <form name = myForm action="#"  method="post">
         <div class="form-group">
           <div class="col-xs-12 col-xs-offset-0">
             <div class="checkbox">
-                <!--TU MUSI BYC WALIDACJA-->
               <label class="labelZgoda">
                 <input name="zgoda1" id="zgoda1" type="checkbox"
                        value="safety"
                        >
-                  Pamętaj! Twój adres e-mail jest z nami <a href="#popup1">bezpieczny.</a> Mozesz miec pewnosc, ze nikomu go nie udostępnimy.
+                  Pamętaj! Twój adres e-mail jest z nami <a href="#popup1">bezpieczny.</a> Możesz mieć pewność, że nikomu go nie udostępnimy.
                   <br>Nie lubimy spamowac, dlatego wiadomość o premierze otrzymasz tylko jeden raz.
               </label>
             </div>
@@ -200,21 +197,21 @@
 
 
       <div class="col-xs-12">
-        <!-- Button trigger modal -->
-
-        <div id="alert-background"> </div>
+        <div id = "alert-background"></div>
         <div id = "alert-box">
-          <div id = "alert-header"> Coś poszło nie tak. </div>
-          <div id="alert-body"> Nie zaznaczono zgody.</div>
-          <div id = "alert-footer"> <button type= "button" onclick="alertCheckbox()"> OK </button></div>
+          <div id = "textBox" class="alert-header"> </div>
+          <div class="alert-footer">
+            <button type="button" onclick="alertCheckbox()"> OK</button>
+          </div>
         </div>
+
         <button name="przyciskWyslij" type="button" onclick="ValidationEvent()" class="btn btn-success" data-toggle="modal" >
           Wyślij
             <div id="popup2" class="overlay">
                 <div class="popupDrugi">
                     <a class="close" href="#">x</a>
                     <div class="content">
-                        Dziękujemy! A teraz obiecana <a href="piano.html">niespodzianka</a>!
+                        Dziękujemy! Przygotowaliśmy dla Ciebie małą <a href="piano.html">niespodziankę!</a>!
                     </div>
                 </div>
             </div>
