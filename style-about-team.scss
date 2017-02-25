@@ -191,6 +191,10 @@
     }
   }
 }
+
+footer {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.69) inset;
+}
 .pasekDolny {
   color: white;
   text-align: right;
@@ -200,9 +204,6 @@
   background-color: rgb(66, 49, 55);
   height: 40px;
   padding: 10px 15px 20px 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.61);
 }
 
-
-@media screen and (min-width 800px) {
-
-}
