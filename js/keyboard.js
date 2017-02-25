@@ -6,7 +6,7 @@ function keyboardIntoSound(keyCode) {
 // po nacisnieciu klawisza odpal dzwiek
 $(document).keyup(function (event) {
     grajNute(keyboardIntoSound(event.keyCode), 1);
-})
+});
 //    document.addEventListener("keydown", function (event) {
 //      console.log(event.keyCode);
 //    });
