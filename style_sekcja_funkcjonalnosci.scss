@@ -4,6 +4,11 @@
   flex-direction: row;
   justify-content: space-around;
   margin: 50px 0;
+
+  .funkcjonalnosc-wrapp-level-1 {
+    display: none;
+  }
+
   .funkcjonalnosc {
     margin: 0 10px;
     width: 220px;
@@ -96,6 +101,41 @@
           transition: all 0.5s linear;
         }
       }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .funkcje_aplikacji {
+    display: block;
+    text-align: center;
+
+    .funkcjonalnosc {
+      display: inline-block;
+      height: 300px;
+      vertical-align: top;
+      background-size: auto 600px;
+      margin-bottom: 20px;
+
+      &.funkcjonalnosc_znajdz_koncert {
+        background-position: -220px top;
+      }
+      &.funkcjonalnosc_znajdz_atrakcje {
+        background-position: -440px top;
+      }
+      &.funkcjonalnosc_znajdz_bilet {
+        background-position: -220px -300px;
+      }
+      &.funkcjonalnosc_poinformuj_innych {
+        background-position: -440px -300px;
+      }
+    }
+
+    .funkcjonalnosc-wrapp-level-1 {
+      display: block;
+      background-color: transparent;
     }
   }
 }
