@@ -28,19 +28,19 @@ notesTable.stopMusic = function() {
   this.table.forEach( (audio) => audio.pause() );
 };
 
-var zagraj = (nazwa_nuty, time, duration, callback_play_note) => {
+var zagraj = (nazwa_nuty, time, duration, play_notes_function) => {
 
-  function Nuta(nazwa_nuty, time, duration, callback_play_note) {
+  function Nuta(nazwa_nuty, time, duration, play_notes_function) {
       this.nazwa_nuty = nazwa_nuty;
       this.time = time;
       this.duration = duration;
 
       this.play = function () {
-        callback_play_note(this.nazwa_nuty, this.duration);
+        play_notes_function(this.nazwa_nuty, this.duration);
       };
   }
 
-  var nuta = new Nuta(nazwa_nuty, time, duration, callback_play_note);
+  var nuta = new Nuta(nazwa_nuty, time, duration, play_notes_function);
 
   var playNoteTimeoutID = setTimeout(function() {
     nuta.play();
@@ -48,14 +48,14 @@ var zagraj = (nazwa_nuty, time, duration, callback_play_note) => {
   timeouts.push( playNoteTimeoutID );
 }
 
-var playTrack = (track, callback_play_note) => {
+var playTrack = (track, play_notes_function) => {
   if (track.notes !== void 0) {
     track.notes.forEach( (note) => {
     const nazwa_nuty = note.name;
     const time = note.time;
     const duration = note.duration;
 
-    zagraj(nazwa_nuty, time, duration, callback_play_note);
+    zagraj(nazwa_nuty, time, duration, play_notes_function);
     });
   }
 };
@@ -66,9 +66,9 @@ var playTrack = (track, callback_play_note) => {
  */
 // grajNute
 // show_note_in_console
-var playMusic = (music, callback_play_note) => {
-  music.tracks.forEach((track) => {
-    playTrack(track, callback_play_note);
+var pianino = (song, play_notes_function) => {
+  song.tracks.forEach((track) => {
+    playTrack(track, play_notes_function);
   });
 };
 /******************************************************************/
