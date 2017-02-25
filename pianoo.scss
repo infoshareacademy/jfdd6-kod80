@@ -101,6 +101,7 @@ ul li:last-child {
 .buttons-table {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .note-name {
