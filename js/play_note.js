@@ -35,6 +35,8 @@ function dodajKolor(note_id, duration ) {
 
 
 function grajNute(nazwa_nuty, duration) {
-  dodajKolor(nazwa_nuty, duration);
-  playNote(  nazwa_nuty.toLowerCase(), duration );
+  if( nazwa_nuty !== void 0) {
+    dodajKolor(nazwa_nuty, duration);
+    playNote(nazwa_nuty.toLowerCase(), duration);
+  }
 }
