@@ -21,9 +21,6 @@ var songs_db = [
         name: "Row the Boat Ashore",
         data: row_the_boat
     }, {
-        name: "Daisy",
-        data: daisy
-    }, {
         name: "L'aviron",
         data: aviron
     },
