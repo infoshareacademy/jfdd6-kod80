@@ -18,6 +18,18 @@ function noteIdentity(note) {
   }
 }
 
+var notesTable ={
+  table: []
+};
+
+notesTable.push = function(note) {
+  this.table.push( note );
+}
+
+notesTable.stopMusic = function() {
+  this.table.forEach( (audio) => audio.pause() );
+};
+
 function playNote(note, duration) {
   var audio = new Audio('keyboard/'+note+'.mp3');
   if (duration == void 0 || isNaN(duration)) {
@@ -26,6 +38,8 @@ function playNote(note, duration) {
     audio.loop = true;
     audio.play();
     const czasGrania = duration * 1000;
+
+    notesTable.push(audio);
 
     setTimeout(function () {
         audio.pause();
@@ -46,7 +60,6 @@ function dodajKolor(note_id, duration ) {
     $element.removeClass('correct-key');
   }, stala_czas_podswietlania);
   console.log(note_id);
-
 }
 
 function grajNute(nazwa_nuty, duration) {

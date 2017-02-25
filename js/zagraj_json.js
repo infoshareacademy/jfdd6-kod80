@@ -10,10 +10,11 @@
  * Obsluga funkcji
  */
 
-
 var show_note_in_console = (nazwa_nuty, duration) => {
   console.log(nazwa_nuty, duration);
 }
+
+var timeouts = [];
 
 var zagraj = (nazwa_nuty, time, duration, callback_play_note) => {
 
@@ -32,6 +33,7 @@ var zagraj = (nazwa_nuty, time, duration, callback_play_note) => {
   var playNoteTimeoutID = setTimeout(function() {
     nuta.play();
   }, time*1000);
+  timeouts.push( playNoteTimeoutID );
 }
 
 var playTrack = (track, callback_play_note) => {
@@ -101,3 +103,12 @@ $("#music_buttons").append(
     });
   })
 );
+
+//Ustaw stop button
+$(".stop-button").click( function() {
+  notesTable.stopMusic();
+  timeouts.forEach( (timeout) => clearTimeout(timeout));
+
+//quick reset of the timer array you just cleared
+  timeouts = [];
+});
