@@ -2,6 +2,22 @@
  * Created by pawelszymanski on 22.02.17.
  */
 
+function noteIdentity(note) {
+  switch(note) {
+    case 'C#4':
+      return 'cis4';
+      break;
+    case 'D#4':
+      return 'es4';
+      break;
+    case 'F#4':
+      return 'fis4';
+      break;
+    default:
+      return note.toLowerCase();
+  }
+}
+
 function playNote(note, duration) {
   var audio = new Audio('keyboard/'+note+'.mp3');
   if (duration == void 0 || isNaN(duration)) {
@@ -37,6 +53,6 @@ function dodajKolor(note_id, duration ) {
 function grajNute(nazwa_nuty, duration) {
   if( nazwa_nuty !== void 0) {
     dodajKolor(nazwa_nuty, duration);
-    playNote(nazwa_nuty.toLowerCase(), duration);
+    playNote(noteIdentity(nazwa_nuty), duration);
   }
 }
