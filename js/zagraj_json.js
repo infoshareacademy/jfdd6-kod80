@@ -2,18 +2,31 @@
 //  * Created by pawelszymanski on 21.02.17.
 //  */
 
-//castles_music
-//ode_to_joy
-//asturia
-
 /*****************
  * Obsluga funkcji
  */
 
-
 var show_note_in_console = (nazwa_nuty, duration) => {
   console.log(nazwa_nuty, duration);
 }
+
+var timeouts = [];
+
+var notesTable ={
+  table: []
+};
+
+notesTable.push = function(note) {
+  this.table.push( note );
+}
+
+notesTable.clear = function() {
+  this.table = [];
+}
+
+notesTable.stopMusic = function() {
+  this.table.forEach( (audio) => audio.pause() );
+};
 
 var zagraj = (nazwa_nuty, time, duration, callback_play_note) => {
 
@@ -32,6 +45,7 @@ var zagraj = (nazwa_nuty, time, duration, callback_play_note) => {
   var playNoteTimeoutID = setTimeout(function() {
     nuta.play();
   }, time*1000);
+  timeouts.push( playNoteTimeoutID );
 }
 
 var playTrack = (track, callback_play_note) => {
@@ -46,6 +60,12 @@ var playTrack = (track, callback_play_note) => {
   }
 };
 
+/*
+ * Graj muzyko - uzyj odpowiedniej funkcji do grania nuty
+ * @param - plik JSON z muzyka, callback grajacy nute
+ */
+// grajNute
+// show_note_in_console
 var playMusic = (music, callback_play_note) => {
   music.tracks.forEach((track) => {
     playTrack(track, callback_play_note);
@@ -53,57 +73,14 @@ var playMusic = (music, callback_play_note) => {
 };
 /******************************************************************/
 
+function stopMusic() {
+  notesTable.stopMusic();
+  timeouts.forEach( (timeout) => clearTimeout(timeout));
 
-/*
-* Graj muzyko - uzyj odpowiedniej funkcji do grania nuty
-* @param - plik JSON z muzyka, callback grajacy nute
- */
-// grajNute
-// show_note_in_console
+//quick reset of the timer array you just cleared
+  timeouts = [];
+  notesTable.clear();
 
-
-var songs_db = [
-  {
-  name: "Oda do radości",
-  data: ode_to_joy
-  },
-  {
-    name: "Dancing Bear",
-    data: dancing_bear
-  },
-  {
-    name: "Old MacDonald",
-    data: old_macdonald
-  },{
-    name: "Auclaire",
-    data: auclaire
-  },
-  {
-    name: "Row the Boat Ashore",
-    data: row_the_boat
-  }, {
-    name: "Daisy",
-    data: daisy
-  }, {
-    name: "L'aviron",
-    data: aviron
-  },
-  {
-    name: "Nothing else matters",
-    data: nothing_else_matters
-  }
-
-
-
-];
-
-// dodaj klawisze z piosenkami
-$(".buttons-table").append(
-  songs_db.map( function (song) {
-    console.log(song);
-    console.log(song.data);
-    return $('<button>').text(song.name).addClass('btn btn-default').click( function () {
-      playMusic(song.data, grajNute);
-    });
-  })
-);
+  //usun podswietlenia klawiszy
+  $(".set li").removeClass('correct-key');
+}
