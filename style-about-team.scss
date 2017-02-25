@@ -28,6 +28,21 @@
   filter: brightness(1.2);
 }
 
+.ikona1,
+.ikona4 {
+  position: absolute;
+  left: 50%;
+  margin-left: -21px;
+}
+
+.ikona1 {
+  bottom: 80%;
+}
+
+.ikona4 {
+  top: 80%;
+}
+
 
 .o_mnie {
   position: relative;
@@ -56,10 +71,10 @@
     width: 100%;
     flex: 2;
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: flex-start;
     .ikona1 {
-      top: -10%;
       background-image: url(obrazki/icon-about-us/linkedin-icon.png);
     }
   }
@@ -83,11 +98,12 @@
   .trzeci_div {
     width: 100%;
     flex: 2;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+
     .ikona4 {
-      bottom: -10%;
       background-image: url(obrazki/icon-about-us/mail-icon.png);
     }
   }
@@ -157,7 +173,7 @@
     }
     .ikona1 {
       visibility: visible;
-      top: 25%;
+      bottom: 0;
       transform: scale(1);
     }
     .ikona2 {
@@ -172,7 +188,7 @@
     }
     .ikona4 {
       visibility: visible;
-      bottom: 25%;
+      top: 0;
       transform: scale(1);
     }
   }
