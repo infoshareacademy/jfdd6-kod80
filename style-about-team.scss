@@ -109,7 +109,6 @@
   }
   .rotacja1 {
     position: absolute;
-    //background-color: #2b542c;
     top: 50%;
     width: 100%;
     border-top: 2px #fafafa solid;
@@ -141,7 +140,6 @@
     transition: opacity 0.3s linear;
   }
   &:hover {
-    //background-color: #ffffff;
     transform: scale(1.05);
     filter: brightness(0.5);
     transition: all 1s ease;
@@ -203,7 +201,6 @@
   height: 40px;
   padding: 10px 15px 20px 0;
 }
-
 
 
 @media screen and (min-width 800px) {
