@@ -53,15 +53,12 @@ var playMusic = (music, callback_play_note) => {
 };
 /******************************************************************/
 
-
 /*
 * Graj muzyko - uzyj odpowiedniej funkcji do grania nuty
 * @param - plik JSON z muzyka, callback grajacy nute
  */
 // grajNute
 // show_note_in_console
-
-
 var songs_db = [
   {
   name: "Oda do radości",
@@ -92,13 +89,10 @@ var songs_db = [
     name: "Nothing else matters",
     data: nothing_else_matters
   }
-
-
-
 ];
 
 // dodaj klawisze z piosenkami
-$(".buttons-table").append(
+$("#music_buttons").append(
   songs_db.map( function (song) {
     console.log(song);
     console.log(song.data);
