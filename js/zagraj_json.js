@@ -99,16 +99,25 @@ $("#music_buttons").append(
     console.log(song);
     console.log(song.data);
     return $('<button>').text(song.name).addClass('btn btn-default').click( function () {
+      stopMusic();
       playMusic(song.data, grajNute);
     });
   })
 );
 
-//Ustaw stop button
-$(".stop-button").click( function() {
+function stopMusic() {
   notesTable.stopMusic();
   timeouts.forEach( (timeout) => clearTimeout(timeout));
 
 //quick reset of the timer array you just cleared
   timeouts = [];
+  notesTable.clear();
+
+  //usun podswietlenia klawiszy
+  $(".set li").removeClass('correct-key');
+}
+
+//Ustaw stop button
+$(".stop-button").click( function() {
+  stopMusic();
 });
