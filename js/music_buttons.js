@@ -14,7 +14,7 @@ $("#music_buttons").append(
         console.log(song.data);
         return $('<button>').text(song.name).addClass('btn btn-default').click( function () {
             stopMusic();
-            playMusic(song.data, grajNute);
+            pianino(song.data, grajNute);
         });
     })
 );
