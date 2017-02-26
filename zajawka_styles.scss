@@ -65,12 +65,14 @@
   padding: 0;
   box-sizing: border-box;
   width: 14vw;
-  border: none;
+  border: double;
+  border-color: #E21201;
   color: whitesmoke;
   background-color: transparentize(#e21201, 0.18);
   margin-bottom: 2em;
   &:hover {
     border: double;
+    box-sizing: border-box;
   }
 
   a {
