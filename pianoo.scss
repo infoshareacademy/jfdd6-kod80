@@ -15,10 +15,10 @@ ul {
   margin: 5em auto;
   padding: 3em 0 0 3em;
   position: relative;
-  border: 1px solid #160801;
-  border-radius: 1em;
-  background: -webkit-gradient(linear, right bottom, left top, color-stop(0%, rgba(0, 0, 0, 0.3)), color-stop(100%, rgba(0, 0, 0, 0))), url('http://f.cl.ly/items/2q1f3t0C3R1b0g081w3n/vwood.png');
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5) inset, 0 1px rgba(212, 152, 125, 0.2) inset, 0 5px 15px rgba(0, 0, 0, 0.5);
+  //border: 1px solid #160801;
+  //border-radius: 1em;
+  //background: -webkit-gradient(linear, right bottom, left top, color-stop(0%, rgba(0, 0, 0, 0.3)), color-stop(100%, rgba(0, 0, 0, 0))), url('http://f.cl.ly/items/2q1f3t0C3R1b0g081w3n/vwood.png');
+  //box-shadow: 0 0 50px rgba(0, 0, 0, 0.5) inset, 0 1px rgba(212, 152, 125, 0.2) inset, 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 li {
@@ -82,7 +82,7 @@ ul .white:active {
   }
 }
 
-.a, .g, .f, .d, .c {
+.a, .g, .d, .c, .b {
   margin: 0 0 0 -1em;
 }
 
@@ -101,7 +101,6 @@ ul li:last-child {
 .buttons-table {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .note-name {
@@ -130,3 +129,44 @@ ul li:last-child {
   padding: 0 0 0 9px;
 }
 
+h1, h3, h4 {
+  color: #ffffff
+}
+
+.hide-music {
+  display: none;
+}
+
+.btn-default {
+  margin: 5px;
+}
+
+.hide-notes {
+  display: none;
+}
+
+.notes-color {
+  color: red;
+}
+
+.stop-margin {
+  margin: 20px 0;
+}
+
+.notes-middle{
+  text-align: center;
+}
+
+.keyboard-margin-left{
+  margin-left: 15px;
+}
+
+.play-btn-padding {
+  margin: 5px;
+}
+
+//@media screen and (max-width: 800px) {
+//  .container{
+//    width: 600px;
+//  }
+//}
