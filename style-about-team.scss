@@ -10,7 +10,7 @@
   .about_karolina,
   .about_marek,
   .about_pawel {
-    margin: 20px 20px;
+    margin: 20px 10px;
   }
 }
 .ikona1,
@@ -27,6 +27,23 @@
   box-shadow: 0 0 10px #180a0a;
   filter: brightness(1.2);
 }
+
+.ikona1,
+.ikona4 {
+  position: absolute;
+  left: 50%;
+  margin-left: -21px;
+}
+
+.ikona1 {
+  bottom: 80%;
+}
+
+.ikona4 {
+  top: 80%;
+}
+
+
 .o_mnie {
   position: relative;
   display: flex;
@@ -54,10 +71,10 @@
     width: 100%;
     flex: 2;
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: flex-start;
     .ikona1 {
-      top: -10%;
       background-image: url(obrazki/icon-about-us/linkedin-icon.png);
     }
   }
@@ -81,17 +98,17 @@
   .trzeci_div {
     width: 100%;
     flex: 2;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+
     .ikona4 {
-      bottom: -10%;
       background-image: url(obrazki/icon-about-us/mail-icon.png);
     }
   }
   .rotacja1 {
     position: absolute;
-    //background-color: #2b542c;
     top: 50%;
     width: 100%;
     border-top: 2px #fafafa solid;
@@ -110,17 +127,19 @@
   }
   .name {
     color: #fafafa;
+    width: 100%;
+    padding: 5px 0;
+    background-color: rgba(0, 0, 0, 0.28);
     text-shadow: 2px 2px #383838;
     font-family: 'Lato', sans-serif;
     opacity: 1;
     position: absolute;
     bottom: 5%;
-    left: 25%;
+
     font-size: 2rem;
     transition: opacity 0.3s linear;
   }
   &:hover {
-    //background-color: #ffffff;
     transform: scale(1.05);
     filter: brightness(0.5);
     transition: all 1s ease;
@@ -152,7 +171,7 @@
     }
     .ikona1 {
       visibility: visible;
-      top: 25%;
+      bottom: 0;
       transform: scale(1);
     }
     .ikona2 {
@@ -167,10 +186,14 @@
     }
     .ikona4 {
       visibility: visible;
-      bottom: 25%;
+      top: 0;
       transform: scale(1);
     }
   }
+}
+
+footer {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.69) inset;
 }
 .pasekDolny {
   color: white;
@@ -180,9 +203,7 @@
   width: 100%;
   background-color: rgb(66, 49, 55);
   height: 40px;
-  padding: 10px 15px 20px 0px;
+  padding: 10px 15px 20px 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.61);
 }
 
-
-
-//@media screen and ()
