@@ -5,6 +5,18 @@
   border-color: white;
 }
 
+
+#podajMaila:valid {
+
+  border-color: $color_logo;
+
+}
+
+#podajMaila:focus {
+  outline: none;
+}
+
+
 .zapis {
   background-color: #333333;
   text-align: center;
@@ -48,18 +60,6 @@ textarea {
   color: $background-color;
 }
 
-input:invalid {
-  background-color: #ffffff;
-}
-
-input:required {
-  border-color: $color_logo;
-  border-width: 5px;
-}
-
-input:required:invalid {
-  border-color: $color_tekst_menu_hover;
-}
 
 // ========== pop up ============================
 .overlay {
