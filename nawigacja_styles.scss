@@ -53,6 +53,7 @@
     border-color: $color_tekst_menu_active_focus;
     border-width: 1px;
     margin: 3px;
+    outline: none;
   }
 
   .navbar-nav>li>a {
@@ -83,6 +84,7 @@
     .navbar-nav > li > a:focus {
       border-width: 1px;
       margin:  -1px 0px 2px 0px;
+      outline: none;
     }
   }
 }
