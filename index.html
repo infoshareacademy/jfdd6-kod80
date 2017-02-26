@@ -1,46 +1,384 @@
 <!doctype html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
-<body>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
+  <!-- Latest compiled and minified CSS -->
+
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+        <!--integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+  <link rel="stylesheet" href="zajawka_styles.css">
+  <!--<link rel="stylesheet" href="style_funkcjonalnosci.css">-->
+  <link rel="stylesheet" href="nawigacja_styles.css">
+  <link rel="stylesheet" href="style_formularz.css">
+  <link rel="stylesheet" href="style-about-team.css">
+  <link rel="stylesheet" href="style_sekcja_funkcjonalnosci.css">
+  <link rel="stylesheet" href="style-anime-avatar.css">
+  <!--<link rel="stylesheet" href="styles.css">-->
+  <title>SoundTrip</title>
+</head>
+<body data-spy="scroll" data-target="#navbar-example">
 
 <header>
+  <nav class="navbar navbar-default nawigacja">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#navbar"
+                aria-expanded="false"
+                aria-controls="navbar">
 
-    <div class="nawigacja">
-        nawigacja
-    </div>
+          <span class="sr-only">Toggle navigation</span>
 
-    <div class="zajawka">
-        zajawka
+          <span class="icon-bar"></span>
+
+          <span class="icon-bar"></span>
+
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="#zajawka">
+          <img src="./Grafiki/LogoSoundtrip.png"/>
+        </a>
+      </div>
+
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+
+          <li><a href="#zajawka" id="zajawka_nav">Zajawka</a></li>
+
+          <li><a href="#opis" id="opis_nav">Opis</a></li>
+
+          <li><a href="#zapis" id="zapis_nav">Zapisz się</a></li>
+
+          <!--<li><a href="#dlugi_opis" id="dlugi_opis_nav">Dowiedz się więcej</a></li>-->
+
+          <li><a href="#o_nas" id="o_nas_nav">O nas</a></li>
+
+        </ul>
+      </div>
     </div>
+  </nav>
+
+  <div class="zajawka tu-bede-nawigowal" id="zajawka">
+    <div class="duzyTytul">
+      <div class="logo_z_napisem">
+        <a href="#soundtrip">
+          <img src="./Grafiki/LogoSoundtrip.png"/>
+        </a>
+
+        <h1 id="soundtrip">
+          SoundTrip
+        </h1>
+      </div>
+
+      <h2>
+        Trip to sound
+      </h2>
+
+      <p>
+        Festiwal w planach? Obczaj miejscówkę!
+      </p>
+
+      <div class="obramowanie-przycisku">
+        <a href="#zapis">
+          <button class="przycisk-zapisz-sie">
+            Zapisz się
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
 </header>
 
 <main>
-    <div class="opis">
+  <div class="opis tu-bede-nawigowal sekcja-funkcjonalnosc"
+       id="opis">
+    <div class="container">
+      <div class="funkcje_aplikacji">
+        <div class="funkcjonalnosc funkcjonalnosc_znajdz_koncert">
+          <div class="kontener">
 
+            <figure class="ikona ikona_koncert"></figure>
+
+            <h2 class=naglowek>Znajdź koncert!</h2>
+
+            <p class="opis">Znajdź swoje wydarzenie muzyczne, wyszukując rodzaju muzyki, miejsca lub daty.</p>
+
+          </div>
+        </div>
+
+        <div class="funkcjonalnosc funkcjonalnosc_znajdz_atrakcje">
+          <div class="kontener">
+
+            <figure class="ikona ikona_atrakcje"></figure>
+
+            <h2 class=naglowek>Więcej zabawy!</h2>
+
+            <p class="opis">Znajdź dodatkowe atrakcje, w pobliżu Twojego koncertu: atrakcje turystyczne, nocleg,
+              gastronomię, dojazd.
+          </div>
+        </div>
+
+        <div class="funkcjonalnosc-wrapp"></div>
+
+        <div class="funkcjonalnosc funkcjonalnosc_znajdz_bilet">
+          <div class="kontener">
+
+            <figure class="ikona ikona_bilet"></figure>
+
+            <h2 class=naglowek>Kup bilet!</h2>
+
+            <p class="opis">Lokalizacje gdzie możesz zakupić bilety na wybrane atrakcje.</p>
+          </div>
+        </div>
+
+        <div class="funkcjonalnosc funkcjonalnosc_poinformuj_innych">
+          <div class="kontener">
+
+            <figure class="ikona ikona_poinformuj"></figure>
+
+            <h2 class=naglowek>Zabierz innych!</h2>
+
+            <p class="opis">Stwórz swój plan wydarzenia i zaproś na niego swoich znajomych.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="zapis tu-bede-nawigowal"
+           id="zapis">
+    <div class="container">
+      <h2 class="naglowek_formularza">Nie chcesz przegapić premiery aplikacji SoundTrip?</h2>
+
+      <label class="opis_wiadomosci control-label col-xs-6 col-xs-offset-3">Wystarczy, że zostawisz nam swój adres e-mail.</label>
+
+      <form name = myForm action="#"  method="post">
+        <div class="form-group">
+          <div class="col-xs-12 col-xs-offset-0">
+            <div class="checkbox">
+              <label class="labelZgoda">
+                <input name="zgoda1" id="zgoda1" type="checkbox"
+                       value="safety"
+                       >
+                  Pamętaj! Twój adres e-mail jest z nami <a href="#popup1">bezpieczny.</a> Możesz mieć pewność, że nikomu go nie udostępnimy.
+                  <br>Nie lubimy spamowac, dlatego wiadomość o premierze otrzymasz tylko jeden raz.
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div id="popup1" class="overlay">
+          <div class="popup">
+            <h2>Polityka bezpieczeństwa</h2>
+            <a class="close" href="#zapis">&times;</a>
+            <div class="content">
+              Na podstawie przepisów prawnych zobowiązujemy się do bezpiecznego zarządzania powierzonym przez Państwa
+              adresam e-mail oraz do nieudostępniania go osobom trzecim.
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-xs-12">
+            <label>
+              <input name="podajMaila" id="podajMaila" type="email"
+                     placeholder="Wpisz e-mail"
+                     class="wpisz_email"
+                     required>
+            </label>
+          </div>
+        </div>
+
+
+      <div class="col-xs-12">
+        <div id = "alert-background"></div>
+        <div id = "alert-box">
+          <div id = "textBox" class="alert-header"> </div>
+          <div class="alert-footer">
+            <button type="button" onclick="alertCheckbox()"> OK</button>
+          </div>
+        </div>
+
+        <button name="przyciskWyslij" type="button" onclick="ValidationEvent()" class="btn btn-success" data-toggle="modal" >
+          Wyślij
+            <div id="popup2" class="overlay">
+                <div class="popupDrugi">
+                    <a class="close" href="#zapis">x</a>
+                    <div class="content">
+                        Dziękujemy! Przygotowaliśmy dla Ciebie małą <a href="piano.html">niespodziankę!</a>!
+                    </div>
+                </div>
+            </div>
+
+        </button>
+      </div>
+      </form>
     </div>
 
-    <div class="zapis" id="zapis">
+  </section>
 
-    </div>
-
-    <div class="footer">
-
-    </div>
-
+  <!--<div class="dlugi_opis tu-bede-nawigowal"-->
+       <!--id="dlugi_opis">-->
+  <!--</div>-->
 </main>
 
 <footer>
+  <div class="container">
+    <div class="footer">
+      <section class="o_nas tu-bede-nawigowal"
+               id="o_nas">
+        <section class="about_marek animavat">
+          <div class="o_mnie marek">
+            <div class="pierwszy_div">
+              <a href="https://www.linkedin.com/in/marek-kita-109849138"
+                 class="ikona1">
+              </a>
+            </div>
+
+            <div class="drugi_div">
+              <div class="ikona2"></div>
+
+              <a href="https://github.com/kitamarekweb"
+                 class="ikona3">
+              </a>
+            </div>
+
+            <div class="trzeci_div">
+              <a href="mailto:kitamarekweb@gmail.com"
+                 class="ikona4">
+              </a>
+            </div>
+
+            <div class="rotacja1"></div>
+
+            <div class="rotacja2"></div>
+
+            <p class="name">Marek Kita</p>
+          </div>
+        </section>
+
+        <section class="about_agata animavat">
+          <div class="o_mnie agata">
+            <div class="pierwszy_div">
+              <a href="https://www.linkedin.com/in/agata-ca%C5%82a-8b60a8136?trk=nav_responsive_tab_profile"
+                 class="ikona1">
+              </a>
+            </div>
+
+            <div class="drugi_div">
+              <div class="ikona2"></div>
+
+              <a href="https://github.com/agatacala"
+                 class="ikona3">
+              </a>
+            </div>
+
+            <div class="trzeci_div">
+              <a href="mailto:agata.cala@gmail.com"
+                 class="ikona4">
+              </a>
+            </div>
+
+            <div class="rotacja1"></div>
+
+            <div class="rotacja2"></div>
+
+            <p class="name">Agata Cała</p>
+          </div>
+        </section>
+
+        <section class="about_karolina animavat">
+          <div class="o_mnie karolina">
+
+            <div class="pierwszy_div">
+              <a href="https://www.linkedin.com/in/karolinakreft/"
+                 class="ikona1">
+              </a>
+            </div>
+
+            <div class="drugi_div">
+              <div class="ikona2"></div>
+
+              <a href="https://github.com/stefanova"
+                 class="ikona3">
+              </a>
+            </div>
+
+            <div class="trzeci_div">
+              <a href="mailto:kar.kreft@gmail.com"
+                 class="ikona4">
+              </a>
+            </div>
+
+            <div class="rotacja1"></div>
+
+            <div class="rotacja2"></div>
+
+            <p class="name">Karolina Kreft</p>
+          </div>
+        </section>
+
+        <section class="about_pawel animavat">
+
+          <div class="o_mnie pawel">
+
+            <div class="pierwszy_div">
+              <a href="https://pl.linkedin.com/in/pawe%25C5%2582-szyma%25C5%2584ski-7a345b111"
+                 class="ikona1">
+              </a>
+            </div>
+
+            <div class="drugi_div">
+              <div class="ikona2"></div>
+
+              <a href="https://github.com/PawelSzy"
+                 class="ikona3">
+              </a>
+            </div>
+
+            <div class="trzeci_div">
+              <a href="mailto:pawelszyman@gmail.com"
+                 class="ikona4">
+              </a>
+            </div>
+
+            <div class="rotacja1"></div>
+
+            <div class="rotacja2"></div>
+
+            <p class="name">Paweł Szymański</p>
+          </div>
+        </section>
+      </section>
+    </div>
+  </div>
+
+    <div class="pasekDolny">
+        © 2017 by SoundTrip
+
+    </div>
+
 
 
 </footer>
 
+
+<script src="./bootstrap/jquery.min.js"></script>
+<script src="./bootstrap/bootstrap.min.js"></script>
+<script src="./js/navigation.js"></script>
+<script src="./js/scrollspy.js"></script>
+<script src="./js/use_scroll_spy.js"></script>
+<script src="./js/anime-avatar.js"></script>
+<script src="./js/app.js"></script>
 </body>
+
+
 </html>

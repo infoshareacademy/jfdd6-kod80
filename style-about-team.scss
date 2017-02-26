@@ -1,0 +1,209 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato&subset=latin-ext');
+.o_nas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px 0;
+  .about_agata,
+  .about_karolina,
+  .about_marek,
+  .about_pawel {
+    margin: 20px 10px;
+  }
+}
+.ikona1,
+.ikona2,
+.ikona3,
+.ikona4 {
+  visibility: hidden;
+  position: relative;
+  transform: scale(0);
+  transition: all 1s ease;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #180a0a;
+  filter: brightness(1.2);
+}
+
+.ikona1,
+.ikona4 {
+  position: absolute;
+  left: 50%;
+  margin-left: -21px;
+}
+
+.ikona1 {
+  bottom: 80%;
+}
+
+.ikona4 {
+  top: 80%;
+}
+
+
+.o_mnie {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 300px;
+  background-color: #ffffff;
+  box-shadow: 0 0 12px #414141;
+  transform: scale(1);
+  transition: all 1s ease;
+  text-align: center;
+  &.marek {
+    background-image: url('obrazki/team-photo/marek.jpg');
+  }
+  &.agata {
+    background-image: url('obrazki/team-photo/agata.jpg');
+  }
+  &.karolina {
+    background-image: url('obrazki/team-photo/karolina.jpg');
+  }
+  &.pawel {
+    background-image: url('obrazki/team-photo/pawel.jpg');
+  }
+  .pierwszy_div {
+    width: 100%;
+    flex: 2;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+    .ikona1 {
+      background-image: url(obrazki/icon-about-us/linkedin-icon.png);
+    }
+  }
+  .drugi_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+    .ikona2 {
+      left: -10%;
+      background-image: url(obrazki/icon-about-us/about-me-icon.png);
+    }
+    .ikona3 {
+      right: -10%;
+      background-image: url(obrazki/icon-about-us/github-icon.png);
+      background-color: #fafafa;
+    }
+  }
+  .trzeci_div {
+    width: 100%;
+    flex: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    .ikona4 {
+      background-image: url(obrazki/icon-about-us/mail-icon.png);
+    }
+  }
+  .rotacja1 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    border-top: 2px #fafafa solid;
+    transform: rotate(45deg) scale(0.1);
+    opacity: 0;
+    transition: all 1s linear;
+  }
+  .rotacja2 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    border-top: 2px #fafafa solid;
+    transform: rotate(-45deg) scale(0.1);
+    opacity: 0;
+    transition: all 1s linear;
+  }
+  .name {
+    color: #fafafa;
+    width: 100%;
+    padding: 5px 0;
+    background-color: rgba(0, 0, 0, 0.28);
+    text-shadow: 2px 2px #383838;
+    font-family: 'Lato', sans-serif;
+    opacity: 1;
+    position: absolute;
+    bottom: 5%;
+
+    font-size: 2rem;
+    transition: opacity 0.3s linear;
+  }
+  &:hover {
+    transform: scale(1.05);
+    filter: brightness(0.5);
+    transition: all 1s ease;
+    &.marek {
+      background-image: url('obrazki/team-photo/marek-sluchawki.jpg');
+    }
+    &.agata {
+      background-image: url('obrazki/team-photo/agata-sluchawki.jpg');
+    }
+    &.karolina {
+      background-image: url('obrazki/team-photo/karolina-sluchawki.jpg');
+    }
+    &.pawel {
+      background-image: url('obrazki/team-photo/pawel-sluchawki.jpg');
+    }
+    .name {
+      opacity: 0;
+    }
+    .rotacja1,
+    .rotacja2 {
+      opacity: 0.7;
+      transition: all 1s ease;
+    }
+    .rotacja1 {
+      transform: rotate(45deg) scale(1);
+    }
+    .rotacja2 {
+      transform: rotate(-45deg) scale(1);
+    }
+    .ikona1 {
+      visibility: visible;
+      bottom: 0;
+      transform: scale(1);
+    }
+    .ikona2 {
+      visibility: visible;
+      left: 20%;
+      transform: scale(1);
+    }
+    .ikona3 {
+      visibility: visible;
+      right: 20%;
+      transform: scale(1);
+    }
+    .ikona4 {
+      visibility: visible;
+      top: 0;
+      transform: scale(1);
+    }
+  }
+}
+
+footer {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.69) inset;
+}
+.pasekDolny {
+  color: white;
+  text-align: right;
+  margin-right: 100px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #333333;
+  height: 40px;
+  padding: 10px 15px 20px 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.61);
+}
+

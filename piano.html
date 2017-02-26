@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="pl">
+<body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+  <!--integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+  <link rel="stylesheet" href="pianoo.css">
+
+  <title>SoundTrip</title>
+</head>
+<div class="container">
+
+  <div class="buttons-table col-xs-12 stop-at-sm" id="music_buttons"></div>
+
+  <div class="buttons-table stop-button col-xs-12">
+    <button type="button" class="btn btn-danger stop-margin">Stop</button>
+  </div>
+
+  <div class="col-xs-offset-1">
+    <div class="btn btn-success kotek play-btn-padding">Wlazł kotek na płotek</div>
+    <div class="btn btn-success stolat play-btn-padding">Sto lat!</div>
+    <!--<div class="btn btn-success tylebylodni play-btn-padding">Tyle było dni...</div>-->
+    <div class="btn btn-success odadoradosci play-btn-padding">Oda do radosci</div>
+    <div class="btn btn-success panmcdonald play-btn-padding">Pan McDonald</div>
+    <!--<div class="btn btn-success pinkpanther play-btn-padding">Różowa Pantera</div>-->
+    <div class="btn btn-success springviva play-btn-padding">Wiosna - Antonio Vivaldi</div>
+    <div class="btn btn-success chfire play-btn-padding">Chariots of Fire</div>
+  </div>
+
+  <div class="col-xs-12 keyboard-margin-left">
+    <ul class="set">
+      <li id="white-c" data-note="c4" data-key='83' class="white c">
+        <span class="note-name"><strong>C</strong></span>
+        <span class="key-name"><strong>s</strong></span>
+      </li>
+      <li id="black-cs" data-note="cis4" data-key='69' class="black cs">
+    <span
+      class="note-name-black"><strong>C#</strong></span>
+        <span class="key-name-black"><strong>e</strong></span>
+      </li>
+      <li id="white-d" data-note="d4" data-key='68' class="white d">
+        <span class="note-name"><strong>D</strong></span>
+        <span class="key-name"><strong>d</strong></span>
+      </li>
+      <li id="black-ds" data-note="es4" data-key='82' class="black cs">
+    <span
+      class="note-name-black"><strong>D#</strong></span>
+        <span class="key-name-black"><strong>r</strong></span>
+      </li>
+      <li id="white-e" data-note="e4" data-key='70' class="white c">
+        <span class="note-name"><strong>E</strong></span>
+        <span class="key-name"><strong>f</strong></span>
+      </li>
+      <li id="white-f" data-note="f4" data-key='74' class="white f">
+        <span class="note-name"><strong>F</strong></span>
+        <span class="key-name"><strong>j</strong></span>
+      </li>
+      <li id="black-fs" data-note="fis4" data-key='85' class="black fs">
+        <span class="note-name-black"><strong>F#</strong></span>
+        <span class="key-name-black"><strong>u</strong></span>
+      </li>
+      <li id="white-g" data-note="g4" data-key='75' class="white g">
+        <span class="note-name"><strong>G</strong></span>
+        <span class="key-name"><strong>k</strong></span>
+      </li>
+      <li id="black-gs" data-note="gis4" data-key='73' class="black gs">
+    <span
+      class="note-name-black"><strong>G#</strong></span>
+        <span class="key-name-black"><strong>i</strong></span>
+      </li>
+      <li id="white-a" data-note="a4" data-key='76' class="white g">
+        <span class="note-name"><strong>A</strong></span>
+        <span class="key-name"><strong>l</strong></span>
+      </li>
+      <li id="black-as" data-note="h4" data-key='79' class="black as">
+    <span
+      class="note-name-black"><strong>A#</strong></span>
+        <span class="key-name-black"><strong>o</strong></span>
+      </li>
+      <li id="white-b" data-note="b4" data-key='186' class="white b">
+        <span class="note-name"><strong>B</strong></span>
+        <span class="key-name"><strong>;</strong></span>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <div id='kotek-nuty' class='hide-notes col-xs-12 notes-middle'>
+      <h4>Zagraj: Wlazł kotek na płotek.</h4>
+      <h3 class="notes-color">
+        k
+        f
+        f
+        j
+        d
+        d
+        s
+        f
+        k
+        ---
+        k
+        f
+        f
+        j
+        d
+        d
+        s
+        f
+        s
+      </h3>
+    </div>
+  </div>
+
+  <div>
+    <div id='stolat-nuty' class='hide-notes col-xs-12 notes-middle'>
+      <h4>Zagraj: Sto lat!</h4>
+      <h3 class="notes-color">
+        k
+        f
+        k
+        f
+        k
+        l
+        k
+        j
+        f
+        j
+        ---
+        j
+        d
+        j
+        d
+        j
+        k
+        j
+        f
+        d
+        f
+        ---
+        k
+        k
+        f
+        k
+        k
+        f
+        k
+        s
+        ;
+        l
+        k
+        l
+        ---
+        ;
+        ;
+        ;
+        s
+      </h3>
+    </div>
+  </div>
+
+  <!--<div>-->
+  <!--<div id='tylebylodni-nuty' class='hide-notes col-xs-12 notes-middle'>-->
+  <!--<h4>Tyle było dni...</h4>-->
+  <!--<h3 class="notes-color">-->
+  <!--f-->
+  <!--f-->
+  <!--;-->
+  <!--l-->
+  <!--;-->
+  <!--u-->
+  <!-- -&#45;&#45;-->
+  <!--k-->
+  <!--k-->
+  <!--k-->
+  <!--k-->
+  <!--u-->
+  <!--u-->
+  <!-- -&#45;&#45;-->
+  <!--f-->
+  <!--f-->
+  <!--;-->
+  <!--l-->
+  <!--;-->
+  <!--u-->
+  <!-- -&#45;&#45;-->
+  <!--k-->
+  <!--k-->
+  <!--k-->
+  <!--k-->
+  <!--u-->
+  <!--u-->
+  <!--</h3>-->
+  <!--</div>-->
+  <!--</div>-->
+
+  <div>
+    <div id='odadoradosci-nuty' class='hide-notes col-xs-12 notes-middle'>
+      <h4>Zagraj: Oda do radości.</h4>
+      <h3 class="notes-color">
+        f
+        f
+        j
+        k
+        k
+        j
+        f
+        d
+        s
+        s
+        d
+        f
+        f
+        d
+        d
+        ---
+        f
+        f
+        j
+        k
+        k
+        j
+        f
+        d
+        s
+        s
+        d
+        f
+        d
+        s
+        s
+        ---
+        d
+        d
+        f
+        s
+        d
+        f
+        j
+        f
+        s
+        d
+        f
+        j
+        f
+        s
+        s
+        d
+        ---
+        k
+        f
+        f
+        j
+        k
+        k
+        j
+        f
+        d
+        s
+        s
+        d
+        f
+        d
+        s
+        s
+      </h3>
+    </div>
+  </div>
+
+  <div>
+    <div id='panmcdonald-nuty' class='hide-notes col-xs-12 notes-middle'>
+      <h4>Zagraj: Pan McDonald.</h4>
+      <h3 class="notes-color">
+        k
+        k
+        k
+        d
+        f
+        f
+        d
+        ---
+        ;
+        ;
+        l
+        l
+        k
+        ---
+        d
+        ---
+        k
+        k
+        k
+        d
+        f
+        f
+        d
+        ---
+        ;
+        ;
+        l
+        l
+        k
+      </h3>
+    </div>
+  </div>
+
+  <!--<div>-->
+  <!--<div id='pinkpanther-nuty' class='hide-notes col-xs-12 notes-middle'>-->
+  <!--<h4>Zagraj: Różowa Pantera.</h4>-->
+  <!--<h3 class="notes-color">-->
+  <!--r-->
+  <!--f-->
+  <!--u-->
+  <!--k-->
+  <!-- - -->
+  <!--r-->
+  <!--f-->
+  <!--u-->
+  <!--k-->
+  <!-- - -->
+  <!--s-->
+  <!--;-->
+  <!--f-->
+  <!--k-->
+  <!--;-->
+  <!--o-->
+  <!-- - -->
+  <!--l-->
+  <!--k-->
+  <!--f-->
+  <!--d-->
+  <!--f-->
+  <!--</h3>-->
+  <!--</div>-->
+  <!--</div>-->
+
+  <div>
+    <div id='springviva-nuty' class='hide-notes col-xs-12 notes-middle'>
+      <h4>Wiosna - Antonio Vivaldi.</h4>
+      <h3 class="notes-color">
+        s
+        f
+        f
+        f
+        d
+        s
+        k
+        ---
+        k
+        j
+        f
+        f
+        f
+        d
+        s
+        k
+        ---
+        k
+        j
+        f
+        j
+        k
+        j
+        f
+        d
+        ---
+        s
+        f
+        f
+        f
+        d
+        s
+        k
+        ---
+        k
+        j
+        f
+        f
+        f
+        d
+        s
+        k
+        ---
+        k
+        j
+        f
+        j
+        k
+        j
+        f
+        d
+        ---
+        s
+        k
+        j
+        f
+        j
+        k
+        l
+        k
+        ---
+        s
+        k
+        j
+        f
+        j
+        k
+        l
+        k
+        ---
+        s
+        l
+        k
+        j
+        f
+        d
+        s
+        d
+        s
+        s
+        ---
+        s
+        k
+        j
+        f
+        j
+        k
+        l
+        k
+        ---
+        s
+        k
+        j
+        f
+        j
+        k
+        l
+        k
+        ---
+        s
+        l
+        k
+        j
+        f
+        d
+        s
+        d
+        s
+        s
+      </h3>
+    </div>
+  </div>
+
+  <div>
+    <div id='chfire-nuty' class='hide-notes col-xs-12 notes-middle'>
+      <h4>Chariots of Fire.</h4>
+      <h3 class="notes-color">
+        e
+        u
+        i
+        o
+        i
+        j
+        ---
+        e
+        u
+        i
+        o
+        i
+        ---
+        e
+        u
+        i
+        o
+        i
+        j
+        ---
+        j
+        u
+        j
+        e
+        e
+        ---
+        e
+        u
+        i
+        o
+        i
+        j
+        ---
+        e
+        u
+        i
+        o
+        i
+        ---
+        e
+        u
+        i
+        o
+        i
+        j
+        ---
+        j
+        u
+        j
+        e
+        e
+        ---
+        e
+        s
+        o
+        i
+        s
+        o
+        i
+        ---
+        e
+        s
+        o
+        i
+        s
+        ---
+        e
+        s
+        o
+        i
+        s
+        o
+        i
+        ---
+        j
+        u
+        j
+        e
+        e
+      </h3>
+    </div>
+  </div>
+
+
+  <!--<div class="col-xs-12">-->
+  <!--<ul class="set">-->
+  <!--<li id="white-c" data-note="c4" data-key='83' class="white c">-->
+  <!--<span class="note-name"><strong>C</strong></span>-->
+  <!--<span class="key-name"><strong>s</strong></span>-->
+  <!--</li>-->
+  <!--<li id="black-cs" data-note="cis4" data-key='69' class="black cs">-->
+  <!--<span-->
+  <!--class="note-name-black"><strong>C#</strong></span>-->
+  <!--<span class="key-name-black"><strong>e</strong></span>r-->
+  <!--</li>-->
+  <!--<li id="white-d" data-note="d4" data-key='68' class="white d">-->
+  <!--<span class="note-name"><strong>D</strong></span>-->
+  <!--<span class="key-name"><strong>d</strong></span>-->
+  <!--</li>-->
+  <!--<li id="black-ds" data-note="es4" data-key='82' class="black cs">-->
+  <!--<span-->
+  <!--class="note-name-black"><strong>D#</strong></span>-->
+  <!--<span class="key-name-black"><strong>r</strong></span>-->
+  <!--</li>-->
+  <!--<li id="white-e" data-note="e4" data-key='70' class="white c">-->
+  <!--<span class="note-name"><strong>E</strong></span>-->
+  <!--<span class="key-name"><strong>f</strong></span>-->
+  <!--</li>-->
+  <!--<li id="white-f" data-note="f4" data-key='72' class="white f">-->
+  <!--<span class="note-name"><strong>F</strong></span>-->
+  <!--<span class="key-name"><strong>h</strong></span>-->
+  <!--</li>-->
+  <!--<li id="black-fs" data-note="fis4" data-key='85' class="black fs">-->
+  <!--<span class="note-name-black"><strong>F#</strong></span>-->
+  <!--<span class="key-name-black"><strong>u</strong></span>-->
+  <!--</li>-->
+  <!--<li id="white-g" data-note="g4" data-key='74' class="white g">-->
+  <!--<span class="note-name"><strong>G</strong></span>-->
+  <!--<span class="key-name"><strong>j</strong></span>-->
+  <!--</li>-->
+  <!--<li id="black-gs" data-note="gis4" data-key='73' class="black gs">-->
+  <!--<span-->
+  <!--class="note-name-black"><strong>G#</strong></span>-->
+  <!--<span class="key-name-black"><strong>i</strong></span>-->
+  <!--</li>-->
+  <!--<li id="white-a" data-note="a4" data-key='75' class="white g">-->
+  <!--<span class="note-name"><strong>A</strong></span>-->
+  <!--<span class="key-name"><strong>k</strong></span>-->
+  <!--</li>-->
+  <!--<li id="black-as" data-note="h4" data-key='79' class="black as">-->
+  <!--<span-->
+  <!--class="note-name-black"><strong>A#</strong></span>-->
+  <!--<span class="key-name-black"><strong>o</strong></span>-->
+  <!--</li>-->
+  <!--<li id="white-b" data-note="b4" data-key='76' class="white b">-->
+  <!--<span class="note-name"><strong>B</strong></span>-->
+  <!--<span class="key-name"><strong>l</strong></span>-->
+  <!--</li>-->
+  <!--</ul>-->
+  <!--</div>-->
+
+
+  <script src="./bootstrap/jquery.min.js"></script>
+  <script src="./bootstrap/bootstrap.min.js"></script>
+  <script src="./js/navigation.js"></script>
+  <script src="./music/castles.js"></script>
+  <script src="./music/ode.js"></script>
+  <script src="./music/asturia.js"></script>
+  <script src="./music/bear.js"></script>
+  <script src="./music/old.js"></script>
+  <script src="./music/auclaire.js"></script>
+  <script src="./music/row.js"></script>
+  <script src="music/lavinion.js"></script>
+  <script src="./js/songs.js"></script>
+  <script src="./js/music_buttons.js"></script>
+  <script src="./js/play_note.js"></script>
+  <script src="./js/zagraj_json.js"></script>
+  <script src="./js/keyboard.js"></script>
+
+  <script>
+    $('.kotek').click(function () {
+      $('#kotek-nuty').toggleClass('hide-notes');
+    });
+  </script>
+
+  <script>
+    $('.stolat').click(function () {
+      $('#stolat-nuty').toggleClass('hide-notes');
+      $(this).addClass('btn-success')
+    });
+  </script>
+
+  <!--<script>-->
+  <!--$('.tylebylodni').click(function () {-->
+  <!--$('#tylebylodni-nuty').toggleClass('hide-notes');-->
+  <!--$(this).addClass('btn-success')-->
+  <!--});-->
+  <!--</script>-->
+
+  <script>
+    $('.odadoradosci').click(function () {
+      $('#odadoradosci-nuty').toggleClass('hide-notes');
+      $(this).addClass('btn-success')
+    });
+  </script>
+
+  <script>
+    $('.panmcdonald').click(function () {
+      $('#panmcdonald-nuty').toggleClass('hide-notes');
+      $(this).addClass('btn-success')
+    });
+  </script>
+
+  <!--<script>-->
+  <!--$('.pinkpanther').click(function () {-->
+  <!--$('#pinkpanther-nuty').toggleClass('hide-notes');-->
+  <!--$(this).addClass('btn-success')-->
+  <!--});-->
+  <!--</script>-->
+
+  <script>
+    $('.springviva').click(function () {
+      $('#springviva-nuty').toggleClass('hide-notes');
+      $(this).addClass('btn-success')
+    });
+  </script>
+
+  <script>
+    $('.chfire').click(function () {
+      $('#chfire-nuty').toggleClass('hide-notes');
+      $(this).addClass('btn-success')
+    });
+  </script>
+
+</div>
+</body>
+
+</html>
