@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  background: #333;
+  background: black;
 }
 
 
@@ -14,6 +14,7 @@ body {
 .powrot-do-strony {
   padding: 20px 20px;
   text-align: center;
+  font-size: 10px;
   a {
     color: white;
     text-decoration: none;
@@ -26,8 +27,8 @@ body {
 ul {
   height: 18.875em;
   width: 34em;
-  margin: 5em auto;
-  padding: 3em 0 0 3em;
+  margin: 1em auto;
+  //padding: 3em 0 0 3em;
   position: relative;
   //border: 1px solid #160801;
   //border-radius: 1em;
@@ -113,7 +114,7 @@ ul li:last-child {
 }
 
 .buttons-table {
-  padding-top: 30px;
+  padding-top: 10px;
   display: flex;
   justify-content: center;
 }
@@ -164,6 +165,7 @@ h4 {
 
 .hide-notes {
   display: none;
+
 }
 
 .notes-color {
@@ -171,7 +173,7 @@ h4 {
 }
 
 .stop-margin {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .notes-middle{
