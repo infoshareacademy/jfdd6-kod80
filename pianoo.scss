@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  background: #222;
+  background: #333;
 }
 
 
@@ -144,8 +144,14 @@ ul li:last-child {
   padding: 0 0 0 9px;
 }
 
-h1, h3, h4 {
-  color: #ffffff
+h3{
+  color: red;
+  font-size: 25px;
+}
+
+h4 {
+  color: #ffffff;
+  letter-spacing: 3px;
 }
 
 .hide-music {
